@@ -1,0 +1,20 @@
+{
+  "name": "azeeza-shaik-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Azeeza Shaik — Computer Science & Engineering Undergraduate",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "software-engineer",
+    "cse",
+    "st-marys-college",
+    "web-development"
+  ],
+  "author": "Azeeza Shaik",
+  "license": "MIT"
+}
+

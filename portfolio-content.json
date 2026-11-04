@@ -1,0 +1,212 @@
+{
+  "personal": {
+    "name": "Azeeza Shaik",
+    "role": "Computer Science & Engineering Student | Aspiring Software Engineer",
+    "headline": "Motivated CSE undergraduate passionate about Web Development, Emerging Technologies, and Artificial Intelligence.",
+    "subheadline": "Second-year B.Tech student (2024–2028) at St. Mary's Women's Engineering College, Guntur. Certified in Web Development (Internshala) and MEAN Stack (Aajhub), with hands-on exposure to AI assistance (EY & Microsoft). Seeking internship opportunities to build innovative, real-world solutions.",
+    "status": "Seeking Internship Opportunities",
+    "location": "Guntur, Andhra Pradesh, India",
+    "phone": "+91 7386944987",
+    "email": "shaikazeeza7386@gmail.com",
+    "resumeUrl": "/Azeeza_Shaik_Resume.pdf"
+  },
+  "socials": {
+    "github": "https://github.com/shaikazeeza7386-dot",
+    "linkedin": "https://linkedin.com/in/azeeza-shaik",
+    "email": "mailto:shaikazeeza7386@gmail.com",
+    "phone": "tel:+917386944987"
+  },
+  "education": [
+    {
+      "institution": "St. Mary's Women's Engineering College",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "period": "2024 – 2028",
+      "location": "Guntur, Andhra Pradesh",
+      "score": "CGPA: 7.86",
+      "status": "Second Year Undergraduate"
+    },
+    {
+      "institution": "Women's Intermediate College",
+      "degree": "Intermediate (Class XI & XII)",
+      "period": "2022 – 2024",
+      "location": "Guntur, Andhra Pradesh",
+      "score": "Percentage: 81.1%",
+      "status": "Completed"
+    },
+    {
+      "institution": "Navabharat Municipal Corporation High School",
+      "degree": "Secondary School Certificate (Class X)",
+      "period": "2021 – 2022",
+      "location": "Guntur, Andhra Pradesh",
+      "score": "Percentage: 73.5%",
+      "status": "Completed"
+    }
+  ],
+  "about": {
+    "introduction": "Hello! I'm Azeeza Shaik, a Computer Science and Engineering student passionate about software development and emerging technologies. I enjoy learning new technologies, building creative projects, and improving my programming skills. I am continuously working towards becoming a skilled Software Engineer through practical learning and hands-on experience.",
+    "narrative": [
+      "I am currently pursuing my B.Tech in Computer Science and Engineering at St. Mary's Women's Engineering College (2024–2028) with a current CGPA of 7.86.",
+      "I have practical knowledge across C, Python, Java, HTML, CSS, JavaScript, and modern full-stack web stacks. I have completed certified training in Web Development through Internshala and MEAN Stack through Aajhub, as well as the AI Skill Passport by EY & Microsoft.",
+      "My hands-on projects include FoodBridge (a food waste management platform) and an AI-Powered Project Risk Intelligence & Early Warning System. I also completed a 2-month animation internship that enriched my visual design and user presentation capabilities.",
+      "My goal is to secure an internship opportunity where I can contribute to impactful software engineering projects, collaborate with industry mentors, and build innovative solutions."
+    ],
+    "strengths": [
+      "Able to work effectively under high pressure and demanding workloads",
+      "Disciplined time management and multitasking",
+      "Strong verbal and written communication skills",
+      "Proven leadership capabilities to guide and support teams to success"
+    ],
+    "hobbies": [
+      "Listening to music",
+      "Watching dramas and educational videos",
+      "Practicing web designing in new and creative formats"
+    ]
+  },
+  "skills": {
+    "programming": [
+      { "name": "C", "level": "Basics / Problem Solving" },
+      { "name": "Java", "level": "Basics / OOP" },
+      { "name": "Python", "level": "Fundamentals" }
+    ],
+    "webDevelopment": [
+      { "name": "HTML5 & CSS3", "level": "Skilled" },
+      { "name": "JavaScript", "level": "Intermediate" },
+      { "name": "Bootstrap", "level": "Responsive Design" },
+      { "name": "React.js Basics", "level": "Components & State" },
+      { "name": "MEAN Stack Basics", "level": "Full Stack Flow" },
+      { "name": "SQL", "level": "Database Fundamentals" }
+    ],
+    "aiAndTools": [
+      { "name": "AI Assisted Dev (EY & Microsoft)", "level": "Practical AI Prompting & Workflows" },
+      { "name": "MS Word", "level": "Proficient" },
+      { "name": "MS Excel", "level": "Proficient" },
+      { "name": "MS PowerPoint", "level": "Advanced Presentations" },
+      { "name": "Canva", "level": "Visual Layouts" }
+    ],
+    "other": [
+      { "name": "Internet Research", "level": "Advanced" },
+      { "name": "Problem Solving", "level": "Active Practice" },
+      { "name": "Creative Storyboarding", "level": "Animation Internship" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "foodbridge",
+      "title": "FoodBridge – Food Waste Management System",
+      "subtitle": "Connecting Food Donors with Communities in Need",
+      "period": "March 2026",
+      "problem": "Severe food wastage from events and households paired with lack of organized distribution to undernourished populations.",
+      "solution": "Developed a comprehensive platform concept for collecting, sorting, and distributing leftover edible food to drastically reduce food waste.",
+      "features": [
+        "Food donation collection and logging workflow",
+        "Edible food sorting and hygienic redistribution guidelines",
+        "Community donor-to-recipient coordination"
+      ],
+      "technologies": ["Lovable", "Web Development", "HTML", "CSS", "JavaScript"],
+      "image": "https://images.openai.com/static-rsc-4/f_nHw0_QokOoVIE4MPhDmXY7de_WNDourzngnJGutQYvq9MRd2CDzTj_yy105482TLsXlvfUbQIEWuOvWob9BC-qWaonnb4kbfxGwm-GJnzHljpAEyF87m1AOeB_HDo6B4A3w7wg0zQPZOJCKiUcMcFBthP1hVJQDzU_LyzAXog?purpose=inline",
+      "githubUrl": "https://github.com/shaikazeeza7386-dot",
+      "demoUrl": "",
+      "featured": true
+    },
+    {
+      "id": "project-risk-ai",
+      "title": "AI-Powered Project Risk Intelligence & Early Warning System",
+      "subtitle": "Predictive Project Management & Delay Prevention",
+      "period": "2025",
+      "problem": "Unexpected project delays and cost overruns caused by lack of proactive milestone monitoring.",
+      "solution": "An intelligent dashboard that predicts possible project bottlenecks using AI, monitors milestones, and delivers actionable early warning alerts.",
+      "features": [
+        "Automated project health score computation",
+        "AI-driven risk prediction & delay forecasting",
+        "Milestone tracking and preventative recommendations"
+      ],
+      "technologies": ["AI", "React.js", "Python", "Supabase", "PostgreSQL"],
+      "image": "https://images.openai.com/static-rsc-4/y4RraWZyyDqrghul8-LDVm9Lzv1gLpCTk4XBr-nNZ__FlqwX0VvzLEAM5auqwT7VSn7zMD6AhbDpjoHJGwpLTSDvMsXvj9m7PGcY3vclWAZG0KJNW8g_0UQIBKoJ-fsNxcm9WGSSeKPkzDQPhu25CMIWZtVPks2sc4qV53fIV1k?purpose=inline",
+      "githubUrl": "https://github.com/shaikazeeza7386-dot",
+      "demoUrl": "",
+      "featured": true
+    },
+    {
+      "id": "personal-portfolio",
+      "title": "Personal Portfolio Website",
+      "subtitle": "Interactive Developer Portfolio & Academic Showcase",
+      "period": "2026",
+      "problem": "Need for a centralized, modern, and mobile-friendly online portfolio to present technical skills, academic records, and projects.",
+      "solution": "A responsive, modern website showcasing personal background, technical skills, education timeline, certified training, and direct contact avenues.",
+      "features": [
+        "Fully responsive modern UI with dark mode support",
+        "Categorized technical skill badges",
+        "Resume download and direct contact channels"
+      ],
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "image": "https://images.openai.com/static-rsc-4/ofNqmzd2dTlr2JK3DrLIl0WA1vH2lxsVF4_NhhiqbBOS5px_CzH3zSI4mH5tbr2bp6oKezghufhTsqzJPfmI3935PVbUsBlFlNioJblb1SLsFNdGisE_VD-Gks8RW7aCq7v8UicrMM7AVX6zL4vl8vVKgwt1TW-IFX1tDLu-gUY?purpose=inline",
+      "githubUrl": "https://github.com/shaikazeeza7386-dot",
+      "demoUrl": "",
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "role": "Animation Intern",
+      "company": "Animation Training Program",
+      "period": "2 Months Duration",
+      "location": "Guntur, Andhra Pradesh",
+      "description": "Completed an intensive two-month internship focused on digital animation and creative workflows.",
+      "achievements": [
+        "Gained practical exposure to core animation concepts and creative production pipelines.",
+        "Significantly improved visual presentation and graphic creativity skills.",
+        "Developed clear understanding of animation production processes from initial storyboard to output."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Web Development Certified Training",
+      "issuer": "Internshala",
+      "details": "8-week certified training covering HTML, CSS, Bootstrap, PHP, JavaScript, and React.",
+      "badge": "Internshala"
+    },
+    {
+      "title": "Full Stack Development (MEAN Stack)",
+      "issuer": "Aajhub",
+      "details": "Hands-on training covering HTML, CSS, JavaScript, and SQL.",
+      "badge": "Aajhub"
+    },
+    {
+      "title": "AI Skill Passport",
+      "issuer": "EY & Microsoft",
+      "details": "Learning existing AI technologies and practical applications in assisting web developers.",
+      "badge": "EY & Microsoft"
+    },
+    {
+      "title": "Cyber Security and Privacy",
+      "issuer": "NPTEL",
+      "details": "Comprehensive curriculum completed; official certificate pending issuance.",
+      "badge": "NPTEL"
+    },
+    {
+      "title": "Animation Internship Completion Certificate",
+      "issuer": "Internship Program",
+      "details": "Two-month practical training certification in Animation workflows.",
+      "badge": "Internship"
+    }
+  ],
+  "extraCurricular": [
+    {
+      "title": "Ideathon Presentations",
+      "description": "Designed and delivered creative presentations in competitive college Ideathons."
+    },
+    {
+      "title": "Technical Seminars & Workshops",
+      "description": "Active participant in college technical seminars, hands-on workshops, and developer meetups."
+    },
+    {
+      "title": "Coding Contests & Tech Quizzes",
+      "description": "Participated in competitive programming contests and technology quizzes."
+    },
+    {
+      "title": "Cultural Events & Tech Fests",
+      "description": "Active contributor and participant in college tech fests and cultural events."
+    }
+  ]
+}

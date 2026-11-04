@@ -1,0 +1,689 @@
+/* ========================================================
+   Azeeza Shaik — Portfolio Custom Styles & Micro-Interactions
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #080c14;
+  color: #f8fafc;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Smooth Navigation Link Hover Indicators */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Card Glow & Glassmorphism Effects */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle Gradient Border Animation */
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    border-color: rgba(139, 92, 246, 0.4);
+  }
+}
+
+.glow-card:hover {
+  animation: borderGlow 3s infinite ease-in-out;
+}
+
+/* Button & Card Micro-Interactions */
+button:active,
+a:active {
+  transform: scale(0.98);
+}
+
+/* Form Focus Styling */
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ========================================================
+   Futuristic 3D Digital Orbit & Movable Objects Animations
+   ======================================================== */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spinOrbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spinCounter {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes spinReverseOrbit {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes spinCounterReverse {
+  0% { transform: rotate(-360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-1deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spinReverse 14s linear infinite;
+}
+
+.animate-spin-orbit {
+  animation: spinOrbit 26s linear infinite;
+}
+
+.animate-spin-counter {
+  animation: spinCounter 26s linear infinite;
+}
+
+.animate-spin-reverse-orbit {
+  animation: spinReverseOrbit 18s linear infinite;
+}
+
+.animate-spin-counter-reverse {
+  animation: spinCounterReverse 18s linear infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+/* ========================================================
+   Cyberpunk Hologram 3D Dashboard Styles (Inspired by Design)
+   ======================================================== */
+.neon-glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.15);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.15);
+}
+
+.neon-text-cyan {
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.neon-text-magenta {
+  color: #ff007f;
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.cyber-headline {
+  background: linear-gradient(135deg, #00f0ff 0%, #38bdf8 30%, #e879f9 70%, #ff007f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px rgba(0, 240, 255, 0.45));
+}
+
+/* Cyber Hologram Glass HUD Card */
+.cyber-hud-card {
+  background: rgba(6, 11, 25, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.15), 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(0, 240, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ========================================================
+   Cosmic Orbit & Space Landscape Visual Styles
+   ======================================================== */
+
+/* Continuous 360-degree 3D Orbit Rotations */
+@keyframes continuousSpinCyan {
+  0% {
+    transform: rotate(0deg) scaleY(0.48);
+  }
+  100% {
+    transform: rotate(360deg) scaleY(0.48);
+  }
+}
+
+@keyframes continuousSpinPurple {
+  0% {
+    transform: rotate(360deg) scaleY(0.54);
+  }
+  100% {
+    transform: rotate(0deg) scaleY(0.54);
+  }
+}
+
+.cosmic-orbit-cyan {
+  transform: rotate(-26deg) scaleY(0.42);
+  border: 2.5px solid #00f0ff;
+  border-left-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.85), inset 0 0 20px rgba(0, 240, 255, 0.4);
+  filter: drop-shadow(0 0 12px #00f0ff);
+  animation: continuousSpinCyan 16s linear infinite;
+}
+
+.cosmic-orbit-purple {
+  transform: rotate(34deg) scaleY(0.46);
+  border: 2px solid #c026d3;
+  border-bottom-color: rgba(192, 38, 211, 0.25);
+  box-shadow: 0 0 30px rgba(192, 38, 211, 0.8), inset 0 0 18px rgba(192, 38, 211, 0.4);
+  filter: drop-shadow(0 0 12px #c026d3);
+  animation: continuousSpinPurple 22s linear infinite;
+}
+
+/* Floating 3D Crystal Gem Cubes with continuous smooth slow multi-axis drift */
+@keyframes slowFloatDrift1 {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(14deg);
+  }
+  25% {
+    transform: translate3d(22px, -28px, 0) rotate(26deg) scale(1.08);
+  }
+  50% {
+    transform: translate3d(38px, -8px, 0) rotate(38deg) scale(1.12);
+  }
+  75% {
+    transform: translate3d(16px, 20px, 0) rotate(22deg) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(14deg);
+  }
+}
+
+@keyframes slowFloatDrift2 {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(-18deg);
+  }
+  25% {
+    transform: translate3d(-24px, 26px, 0) rotate(-32deg) scale(1.07);
+  }
+  50% {
+    transform: translate3d(-40px, 8px, 0) rotate(-45deg) scale(1.1);
+  }
+  75% {
+    transform: translate3d(-18px, -20px, 0) rotate(-28deg) scale(1.03);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(-18deg);
+  }
+}
+
+@keyframes slowFloatDrift3 {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(42deg);
+  }
+  33% {
+    transform: translate3d(-22px, -34px, 0) rotate(66deg) scale(1.12);
+  }
+  66% {
+    transform: translate3d(24px, -16px, 0) rotate(88deg) scale(1.06);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(42deg);
+  }
+}
+
+@keyframes slowFloatDrift4 {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(24deg);
+  }
+  30% {
+    transform: translate3d(28px, 18px, 0) rotate(44deg) scale(1.08);
+  }
+  70% {
+    transform: translate3d(-16px, 30px, 0) rotate(12deg) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(24deg);
+  }
+}
+
+@keyframes slowFloatDrift5 {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(-30deg);
+  }
+  50% {
+    transform: translate3d(26px, -36px, 0) rotate(-8deg) scale(1.14);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(-30deg);
+  }
+}
+
+.animate-float-gem-1 {
+  animation: slowFloatDrift1 12s ease-in-out infinite;
+}
+
+.animate-float-gem-2 {
+  animation: slowFloatDrift2 15s ease-in-out infinite;
+}
+
+.animate-float-gem-3 {
+  animation: slowFloatDrift3 11s ease-in-out infinite;
+}
+
+.animate-float-gem-4 {
+  animation: slowFloatDrift4 14s ease-in-out infinite;
+}
+
+.animate-float-gem-5 {
+  animation: slowFloatDrift5 13s ease-in-out infinite;
+}
+
+/* Futuristic Cyber Floating Orbs / Glowing Tech Nodes for About & Sections */
+.cyber-floating-orb {
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 35%, rgba(0, 240, 255, 0.9) 0%, rgba(56, 189, 248, 0.5) 45%, rgba(14, 165, 233, 0.2) 75%, transparent 100%);
+  border: 1.5px solid rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.65), inset 0 0 15px rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(0 0 12px #00f0ff);
+  will-change: transform;
+}
+
+.cyber-floating-orb-purple {
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 35%, rgba(217, 70, 239, 0.9) 0%, rgba(168, 85, 247, 0.5) 45%, rgba(139, 92, 246, 0.2) 75%, transparent 100%);
+  border: 1.5px solid rgba(217, 70, 239, 0.7);
+  box-shadow: 0 0 30px rgba(217, 70, 239, 0.65), inset 0 0 15px rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(0 0 12px #d946ef);
+  will-change: transform;
+}
+
+.cyber-orbit-ring {
+  border-radius: 9999px;
+  border: 1.5px dashed rgba(0, 240, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35), inset 0 0 15px rgba(0, 240, 255, 0.15);
+  will-change: transform;
+}
+
+.cyber-orbit-ring-purple {
+  border-radius: 9999px;
+  border: 1.5px dashed rgba(217, 70, 239, 0.5);
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.35), inset 0 0 15px rgba(217, 70, 239, 0.15);
+  will-change: transform;
+}
+
+/* Cosmic Floating HUD Glass Badges */
+.cosmic-badge {
+  background: rgba(8, 14, 30, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.18), 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cosmic-badge:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.35), 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Horizontal Floating Stats Capsule Bar */
+.cosmic-stats-bar {
+  background: rgba(5, 10, 26, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.12), 0 20px 50px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(0, 240, 255, 0.06);
+}
+
+/* Mouse Scroll Down Animation */
+@keyframes mouseWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(6px); opacity: 0; }
+}
+
+.animate-mouse-wheel {
+  animation: mouseWheel 1.6s ease-in-out infinite;
+}
+
+.cyber-hud-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cyber-hud-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.3), 0 25px 50px rgba(0, 0, 0, 0.7), inset 0 0 25px rgba(0, 240, 255, 0.15);
+}
+
+/* Cyber Glowing Action Buttons */
+.cyber-btn-cyan {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.25) 0%, rgba(14, 165, 233, 0.45) 100%);
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.45), inset 0 0 12px rgba(0, 240, 255, 0.25);
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.cyber-btn-cyan:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.8), inset 0 0 18px rgba(0, 240, 255, 0.4);
+}
+
+.cyber-btn-magenta {
+  background: linear-gradient(135deg, rgba(255, 0, 127, 0.25) 0%, rgba(217, 70, 239, 0.4) 100%);
+  border: 1px solid #ff007f;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.45), inset 0 0 12px rgba(255, 0, 127, 0.25);
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.cyber-btn-magenta:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.8), inset 0 0 18px rgba(255, 0, 127, 0.4);
+}
+
+/* 3D Holographic Podium & Floor Plane */
+.hologram-podium-wrap {
+  perspective: 700px;
+}
+
+.hologram-podium-floor {
+  transform: rotateX(68deg);
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.3) 0%, rgba(217, 70, 239, 0.2) 45%, transparent 70%);
+  box-shadow: 0 0 50px rgba(0, 240, 255, 0.6), inset 0 0 40px rgba(255, 0, 127, 0.5);
+  border: 2px solid rgba(0, 240, 255, 0.6);
+}
+
+.hologram-podium-ring-2 {
+  transform: rotateX(68deg) scale(0.78);
+  border-radius: 9999px;
+  border: 2px dashed rgba(255, 0, 127, 0.7);
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.5);
+}
+
+.hologram-podium-ring-3 {
+  transform: rotateX(68deg) scale(0.55);
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 240, 255, 0.8);
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.4) 0%, transparent 80%);
+}
+
+/* Hologram Light Column */
+.hologram-light-cone {
+  background: linear-gradient(to top, rgba(0, 240, 255, 0.28) 0%, rgba(217, 70, 239, 0.12) 50%, transparent 100%);
+  clip-path: polygon(20% 100%, 80% 100%, 100% 0%, 0% 0%);
+}
+
+/* Holographic Portrait Circular Frame */
+.hologram-portrait-frame {
+  position: relative;
+  border-radius: 9999px;
+  padding: 5px;
+  background: linear-gradient(135deg, #00f0ff 0%, #a855f7 50%, #ff007f 100%);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.6), 0 0 70px rgba(255, 0, 127, 0.35);
+}
+
+.crystal-gem {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.35) 0%, rgba(168, 85, 247, 0.28) 50%, rgba(217, 70, 239, 0.3) 100%);
+  border: 1.5px solid rgba(0, 240, 255, 0.75);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.5), inset 0 0 16px rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  will-change: transform;
+}
+
+.crystal-gem::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Holographic Saturn Planet */
+.hologram-planet-orbit {
+  transform: rotateX(72deg) rotateY(-22deg);
+  border: 2px solid rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+/* Bottom Cyber Dock Cards */
+.cyber-dock-card {
+  background: linear-gradient(180deg, rgba(13, 22, 44, 0.85) 0%, rgba(4, 7, 18, 0.95) 100%);
+  border-top: 2px solid #00f0ff;
+  border-inline: 1px solid rgba(0, 240, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 0, 127, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 240, 255, 0.15);
+  backdrop-filter: blur(16px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.cyber-dock-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-top-color: #ff007f;
+  border-bottom-color: #00f0ff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 0, 127, 0.4);
+}
+
+.cyber-dock-card::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00f0ff, #ff007f, transparent);
+  filter: blur(1px);
+}
+
+/* ========================================================
+   Night Mode / Light Mode Theme System
+   ======================================================== */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.light-mode body {
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+}
+
+html.light-mode header#navbar {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.light-mode #mobile-menu {
+  background-color: #ffffff !important;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+/* Typography Overrides in Light Mode */
+html.light-mode .text-white,
+html.light-mode .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.light-mode .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light-mode .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light-mode .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light-mode .nav-link {
+  color: #475569 !important;
+}
+
+html.light-mode .nav-link:hover,
+html.light-mode .nav-link.active {
+  color: #2563eb !important;
+}
+
+/* Card & Glassmorphic Container Overrides */
+html.light-mode .glass-panel,
+html.light-mode section > div.rounded-3xl,
+html.light-mode .glow-card,
+html.light-mode .cyber-hud-card,
+html.light-mode .cyber-dock-card,
+html.light-mode [class*="bg-[#0c1220]"],
+html.light-mode [class*="bg-[#0f172a]"],
+html.light-mode [class*="bg-slate-900/"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 4px 6px -2px rgba(15, 23, 42, 0.02) !important;
+}
+
+html.light-mode .cyber-headline {
+  background: linear-gradient(135deg, #0284c7 0%, #6366f1 50%, #d946ef 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.2)) !important;
+}
+
+html.light-mode .border-white\/10,
+html.light-mode .border-white\/5 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light-mode .bg-white\/5 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light-mode .bg-white\/10 {
+  background-color: #e2e8f0 !important;
+}
+
+/* Input Fields & Textareas */
+html.light-mode input,
+html.light-mode textarea {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.light-mode input::placeholder,
+html.light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* 3D Orbit Adjustments in Light Mode */
+html.light-mode .animate-spin-counter,
+html.light-mode .animate-spin-counter-reverse {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light-mode #hero .rounded-full.bg-\[\#080c14\]\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* High Contrast Print Stylesheet */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, #mobile-menu-btn, #toast {
+    display: none !important;
+  }
+  article, section {
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+}
+

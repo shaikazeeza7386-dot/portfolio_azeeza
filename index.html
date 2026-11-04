@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azeeza Shaik | Computer Science & Engineering Undergraduate Portfolio</title>
+  <meta name="description" content="Portfolio of Azeeza Shaik, B.Tech CSE student (2024–2028, CGPA 7.86) at St. Mary's Women's Engineering College. Aspiring Software Engineer with expertise in Web Development, Python, Java, and Artificial Intelligence.">
+  <meta name="keywords" content="Azeeza Shaik, Portfolio, Computer Science, Software Engineer, St. Mary's Women's Engineering College, Guntur, Web Development, FoodBridge, Python, Java, React, AI">
+  <meta name="author" content="Azeeza Shaik">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shaikazeeza7386-dot.github.io/personal-portfolio/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shaikazeeza7386-dot.github.io/personal-portfolio/">
+  <meta property="og:title" content="Azeeza Shaik | Computer Science & Engineering Portfolio">
+  <meta property="og:description" content="Explore projects, skills, education, and credentials of Azeeza Shaik, B.Tech CSE student at St. Mary's Women's Engineering College.">
+  <meta property="og:site_name" content="Azeeza Shaik Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Azeeza Shaik | Computer Science & Engineering Portfolio">
+  <meta name="twitter:description" content="Explore projects, skills, education, and credentials of Azeeza Shaik, B.Tech CSE student at St. Mary's Women's Engineering College.">
+
+  <!-- Favicon (SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%232563eb'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='bold' fill='white'>AS</text></svg>">
+
+  <!-- Performance Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Azeeza Shaik",
+    "jobTitle": "Aspiring Software Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "St. Mary's Women's Engineering College"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guntur",
+      "addressRegion": "Andhra Pradesh",
+      "addressCountry": "India"
+    },
+    "email": "mailto:shaikazeeza7386@gmail.com",
+    "telephone": "+917386944987",
+    "sameAs": [
+      "https://github.com/shaikazeeza7386-dot",
+      "https://www.linkedin.com/in/azeeza-shaik-08769b38a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    ]
+  }
+  </script>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080c14',
+              surface: '#0f172a',
+              card: '#131d35',
+              border: 'rgba(255, 255, 255, 0.08)',
+              primary: '#3b82f6',
+              secondary: '#6366f1',
+              accent: '#8b5cf6',
+              emerald: '#10b981'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#080c14] text-slate-100 antialiased selection:bg-blue-600 selection:text-white relative overflow-x-hidden min-h-screen">
+
+  <!-- Accessibility: Skip to Main Content Link -->
+  <a href="#hero" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold shadow-2xl">
+    Skip to main content
+  </a>
+
+  <!-- Ambient Background Glows -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+  <div class="fixed bottom-1/4 right-10 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-900 border border-emerald-500/30 text-emerald-300 shadow-2xl text-xs font-medium">
+    <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- HEADER (FULL SCREEN WIDTH) -->
+  <header class="sticky top-0 z-40 bg-[#030514]/85 backdrop-blur-xl border-b border-cyan-500/15 transition-all duration-300 py-3 w-full" id="navbar">
+    <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-14 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo (AZEEZA with Aspiring Software Engineer) -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-indigo-600 flex items-center justify-center font-black text-white text-xl shadow-[0_0_18px_rgba(0,240,255,0.7)] group-hover:scale-105 transition-transform">
+          A
+        </div>
+        <div class="flex flex-col text-left">
+          <span class="font-extrabold text-base tracking-wider text-white group-hover:text-cyan-300 transition-colors leading-tight">AZEEZA</span>
+          <span class="text-[10px] text-slate-400 font-medium tracking-wide">Aspiring Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Floating Pill Bar -->
+      <nav class="hidden lg:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-slate-950/85 backdrop-blur-2xl shadow-[0_0_25px_rgba(0,240,255,0.15)] text-xs font-semibold tracking-wide">
+        <a href="#hero" class="nav-link px-4 py-1.5 rounded-full bg-cyan-500/25 text-cyan-300 border border-cyan-400/50 shadow-[0_0_12px_rgba(0,240,255,0.35)] transition-all">Home</a>
+        <a href="#about" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">About</a>
+        <a href="#skills" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Skills</a>
+        <a href="#projects" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Projects</a>
+        <a href="#timeline" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Experience</a>
+        <a href="#timeline" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Education</a>
+        <a href="#certifications" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Certificates</a>
+        <a href="#contact" class="nav-link px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-all">Contact</a>
+      </nav>
+
+      <!-- Desktop Action Controls: GitHub, LinkedIn, Theme Switcher & Let's Connect -->
+      <div class="hidden md:flex items-center gap-2.5">
+        <!-- GitHub Profile Icon Link -->
+        <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full border border-cyan-500/40 bg-slate-950/70 hover:border-cyan-300 hover:bg-cyan-950/50 text-slate-200 hover:text-white transition-all shadow-[0_0_12px_rgba(0,240,255,0.2)] hover:shadow-[0_0_20px_rgba(0,240,255,0.5)] flex items-center justify-center group" title="GitHub: shaikazeeza7386-dot" aria-label="Visit Azeeza Shaik GitHub Profile">
+          <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+
+        <!-- LinkedIn Profile Icon Link -->
+        <a href="https://www.linkedin.com/in/azeeza-shaik-08769b38a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full border border-blue-500/40 bg-slate-950/70 hover:border-blue-300 hover:bg-blue-950/50 text-blue-400 hover:text-white transition-all shadow-[0_0_12px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] flex items-center justify-center group" title="LinkedIn: azeeza-shaik" aria-label="Visit Azeeza Shaik LinkedIn Profile">
+          <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+
+        <!-- Night Mode / Light Mode Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-toggle px-3 py-1.5 rounded-full border border-cyan-500/30 bg-slate-950/70 hover:border-cyan-400 text-xs font-medium text-slate-200 flex items-center gap-2 transition-all cursor-pointer shadow-[0_0_10px_rgba(0,240,255,0.15)]" aria-label="Toggle Night Mode and Light Mode" title="Toggle Night Mode / Light Mode">
+          <span id="theme-icon-dark" class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <span class="text-[11px] font-medium hidden xl:inline">Light</span>
+          </span>
+          <span id="theme-icon-light" class="hidden items-center gap-1.5">
+            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <span class="text-[11px] font-medium hidden xl:inline">Night</span>
+          </span>
+        </button>
+
+        <!-- Let's Connect Capsule Button -->
+        <a href="#contact" class="px-5 py-2 rounded-full border border-fuchsia-500/70 bg-gradient-to-r from-fuchsia-600/30 via-purple-600/30 to-cyan-500/30 hover:border-fuchsia-400 hover:from-fuchsia-600/40 text-white font-bold text-xs transition-all shadow-[0_0_20px_rgba(217,70,239,0.35)] hover:shadow-[0_0_30px_rgba(217,70,239,0.6)] flex items-center gap-2">
+          <span>Let's Connect</span>
+          <svg class="w-3.5 h-3.5 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Controls: Theme Toggle & Hamburger -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button id="mobile-theme-toggle" class="p-2 rounded-lg border border-cyan-500/30 bg-slate-950/70 text-slate-300 hover:text-white" aria-label="Toggle Theme">
+          <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+        <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition-colors" aria-label="Toggle navigation menu">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pt-3 pb-6 bg-[#030514]/95 border-b border-cyan-500/20 space-y-3 backdrop-blur-2xl">
+      <nav class="flex flex-col space-y-2 text-sm font-semibold text-slate-300">
+        <a href="#hero" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Home</a>
+        <a href="#about" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">About</a>
+        <a href="#skills" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Skills</a>
+        <a href="#projects" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Projects</a>
+        <a href="#timeline" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Experience & Education</a>
+        <a href="#certifications" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Certifications</a>
+        <a href="#contact" class="mobile-link px-3 py-2 rounded-lg hover:bg-cyan-500/10 hover:text-cyan-300">Contact</a>
+      </nav>
+      <div class="pt-3 border-t border-cyan-500/15 flex flex-col gap-2.5">
+        <div class="grid grid-cols-2 gap-2">
+          <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-white/5 border border-cyan-500/30 text-xs font-semibold text-slate-200 hover:text-white flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/azeeza-shaik-08769b38a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-white/5 border border-blue-500/30 text-xs font-semibold text-blue-400 hover:text-white flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <a href="#contact" class="mobile-link w-full text-center py-2.5 rounded-full bg-gradient-to-r from-fuchsia-600 to-cyan-600 text-xs font-bold text-white shadow-lg shadow-fuchsia-500/20">
+          Let's Connect 🚀
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN SPREAD HERO SECTION (Edge-to-Edge Without Restrictive Box) -->
+  <section id="hero" class="relative w-full min-h-[92vh] lg:min-h-screen pt-4 sm:pt-8 pb-12 select-none overflow-hidden flex flex-col justify-between">
+    
+    <!-- Interactive Digital Particle Canvas Background -->
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-45 -z-0"></canvas>
+
+    <!-- Atmospheric Ambient Volumetric Glows -->
+    <div class="absolute -top-16 left-12 w-[450px] h-[450px] bg-cyan-600/20 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
+    <div class="absolute top-16 right-16 w-[450px] h-[450px] bg-fuchsia-600/20 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-blue-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <!-- Top-Left Textured Cosmic Moon / Planet -->
+    <div class="absolute top-6 left-4 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-950 border border-purple-500/35 shadow-[0_0_45px_rgba(168,85,247,0.35)] pointer-events-none z-10 flex items-center justify-center opacity-85">
+      <div class="w-5 h-5 rounded-full bg-indigo-900/60 absolute top-5 left-6 filter blur-[1px]"></div>
+      <div class="w-7 h-7 rounded-full bg-purple-950/80 absolute bottom-6 right-7 filter blur-[1px]"></div>
+      <div class="w-3.5 h-3.5 rounded-full bg-slate-900/70 absolute top-10 right-6"></div>
+    </div>
+
+    <!-- Bottom-Right Radiant Luminous Crescent Earth / Planet Horizon -->
+    <div class="absolute -bottom-44 -right-44 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] rounded-full bg-gradient-to-tl from-cyan-500/25 via-blue-700/25 to-transparent border-t-2 border-l-2 border-cyan-400/70 shadow-[0_0_120px_rgba(0,240,255,0.45)] pointer-events-none z-0"></div>
+
+    <!-- Bottom Futuristic Neon Terrain Ridges -->
+    <div class="absolute bottom-0 inset-x-0 h-44 pointer-events-none z-0 opacity-45 overflow-hidden">
+      <svg class="w-full h-full" viewBox="0 0 1440 240" fill="none" preserveAspectRatio="none">
+        <path d="M0,240 L0,170 L120,110 L280,180 L420,90 L600,190 L750,100 L920,175 L1100,75 L1280,165 L1440,85 L1440,240 Z" fill="#040718" fill-opacity="0.9"/>
+        <path d="M0,170 L120,110 L280,180 L420,90 L600,190 L750,100 L920,175 L1100,75 L1280,165 L1440,85" stroke="#a855f7" stroke-width="2" stroke-linecap="round" filter="drop-shadow(0 0 8px #a855f7)"/>
+        <path d="M150,240 Q400,160 720,240" stroke="#00f0ff" stroke-width="2.5" fill="none" filter="drop-shadow(0 0 10px #00f0ff)"/>
+        <path d="M850,240 Q1100,150 1400,240" stroke="#c026d3" stroke-width="2" fill="none" filter="drop-shadow(0 0 8px #c026d3)"/>
+      </svg>
+    </div>
+
+    <!-- Floating 3D Translucent Crystal Gem Cubes (Continuous Slow Smooth Drift) -->
+    <!-- Cube 1: Upper-left under moon -->
+    <div class="absolute top-28 left-6 sm:left-24 block animate-float-gem-4 pointer-events-none z-20">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 crystal-gem rounded-lg"></div>
+    </div>
+    <!-- Cube 2: Top-center above headline -->
+    <div class="absolute top-12 left-[44%] hidden sm:block animate-float-gem-3 pointer-events-none z-20">
+      <div class="w-9 h-9 crystal-gem rounded-lg"></div>
+    </div>
+    <!-- Cube 3: Center space between text and circle -->
+    <div class="absolute top-64 left-[42%] lg:left-[47%] block animate-float-gem-1 pointer-events-none z-20">
+      <div class="w-10 h-10 sm:w-12 sm:h-12 crystal-gem rounded-xl"></div>
+    </div>
+    <!-- Cube 4: Top-right above circular orbit -->
+    <div class="absolute top-16 right-16 sm:right-36 block animate-float-gem-2 pointer-events-none z-20">
+      <div class="w-11 h-11 sm:w-13 sm:h-13 crystal-gem rounded-xl"></div>
+    </div>
+    <!-- Cube 5: Right middle edge -->
+    <div class="absolute top-1/2 right-6 sm:right-14 block animate-float-gem-5 pointer-events-none z-20">
+      <div class="w-9 h-9 sm:w-11 sm:h-11 crystal-gem rounded-lg"></div>
+    </div>
+    <!-- Cube 6: Bottom center near ridges -->
+    <div class="absolute bottom-28 left-[38%] lg:left-[44%] block animate-float-gem-2 pointer-events-none z-20">
+      <div class="w-10 h-10 sm:w-12 sm:h-12 crystal-gem rounded-2xl"></div>
+    </div>
+    <!-- Cube 7: Bottom right over planet horizon -->
+    <div class="absolute bottom-20 right-14 sm:right-28 block animate-float-gem-3 pointer-events-none z-20">
+      <div class="w-8 h-8 sm:w-10 sm:h-10 crystal-gem rounded-lg"></div>
+    </div>
+    <!-- Cube 8: Bottom left near stats capsule -->
+    <div class="absolute bottom-36 left-4 sm:left-14 hidden sm:block animate-float-gem-1 pointer-events-none z-20">
+      <div class="w-8 h-8 crystal-gem rounded-lg"></div>
+    </div>
+
+    <!-- Main Content Stage Across Full Screen Width -->
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-14 xl:px-20 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-2">
+      
+      <!-- LEFT COLUMN: Shifted Gracefully Towards the Right (lg:col-span-6 lg:pl-6 xl:pl-12) -->
+      <div class="lg:col-span-6 space-y-6 text-center lg:text-left lg:pl-6 xl:pl-12">
+        
+        <!-- Top Welcome Pill Badge -->
+        <div class="flex items-center justify-center lg:justify-start">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-400/50 bg-cyan-950/40 text-cyan-300 text-xs font-semibold shadow-[0_0_15px_rgba(0,240,255,0.3)] backdrop-blur-md">
+            <span class="text-cyan-300 text-sm">✧</span>
+            <span>Welcome to my Portfolio</span>
+          </div>
+        </div>
+
+        <!-- Main Hero Headline -->
+        <h1 class="text-4xl sm:text-6xl xl:text-7xl font-black text-white leading-tight tracking-tight">
+          Hello, I'm <br>
+          <span class="cyber-headline relative inline-block">
+            Azeeza Shaik
+            <span class="absolute -top-1 -right-7 text-fuchsia-400 text-2xl animate-pulse">✦</span>
+          </span>
+        </h1>
+
+        <!-- Role Subtitle (Spaced & Stylized) -->
+        <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-cyan-300 uppercase font-semibold">
+          Aspiring Software Engineer
+        </div>
+
+        <!-- Quote -->
+        <div class="text-base sm:text-lg text-cyan-200 italic font-medium leading-relaxed border-l-2 border-cyan-400/80 pl-3.5 max-w-xl mx-auto lg:mx-0">
+          “ Turning Ideas into Innovative Digital Experiences. ”
+        </div>
+
+        <!-- Description Paragraph -->
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
+          I am a Computer Science and Engineering student passionate about software development, emerging technologies and building creative solutions for a better tomorrow.
+        </p>
+
+        <!-- Buttons Grid: Explore My Projects + Download Resume + View Resume -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+          <!-- 1. Explore My Projects -->
+          <a href="#projects" class="cyber-btn-cyan w-full px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wide flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,240,255,0.45)] text-center">
+            <span>Explore My Projects</span>
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+
+          <!-- 2. Download Resume -->
+          <a href="Azeeza_Shaik_Resume.pdf" download="Azeeza_Shaik_Resume.pdf" class="w-full px-4 py-2.5 rounded-full border border-cyan-500/40 bg-slate-950/70 hover:border-cyan-400 hover:bg-cyan-950/40 text-white text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 transition-all shadow-md text-center">
+            <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span class="whitespace-nowrap">Download Resume</span>
+          </a>
+
+          <!-- 3. View Resume -->
+          <a href="resume.html" target="_blank" class="w-full px-4 py-2.5 rounded-full border border-fuchsia-500/40 bg-slate-950/70 hover:border-fuchsia-400 hover:bg-fuchsia-950/40 text-white text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2 transition-all shadow-md text-center group">
+            <svg class="w-4 h-4 text-fuchsia-400 shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            <span class="whitespace-nowrap">View Resume</span>
+          </a>
+        </div>
+
+        <!-- Bottom Horizontal Floating Stats Capsule Bar -->
+        <div class="cosmic-stats-bar rounded-2xl p-3.5 sm:p-4 max-w-2xl mt-4 select-none">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 items-center">
+            <!-- Stat 1: 4+ Projects -->
+            <div class="flex items-center gap-3">
+              <div class="text-cyan-400 font-mono font-bold text-lg">&lt;/&gt;</div>
+              <div class="text-left">
+                <div class="text-base sm:text-lg font-black text-white leading-tight">4+</div>
+                <div class="text-[10px] font-mono text-slate-400">Projects</div>
+              </div>
+            </div>
+
+            <!-- Stat 2: 7.89 CGPA -->
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-fuchsia-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              <div class="text-left">
+                <div class="text-base sm:text-lg font-black text-white leading-tight">7.89</div>
+                <div class="text-[10px] font-mono text-slate-400">CGPA</div>
+              </div>
+            </div>
+
+            <!-- Stat 3: 2 Months Internship -->
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-fuchsia-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <div class="text-left">
+                <div class="text-base sm:text-lg font-black text-white leading-tight">2 Months</div>
+                <div class="text-[10px] font-mono text-slate-400">Internship</div>
+              </div>
+            </div>
+
+            <!-- Stat 4: Continuous Learner -->
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+              <div class="text-left">
+                <div class="text-base sm:text-lg font-black text-white leading-tight">Continuous</div>
+                <div class="text-[10px] font-mono text-slate-400">Learner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Moved Leftwards Towards Center & Circle Made BIG with 2 Continuously Rotating Orbit Lines -->
+      <div class="lg:col-span-6 flex items-center justify-center lg:justify-start lg:-ml-6 xl:-ml-12 py-6 lg:py-0">
+        
+        <!-- Large Cosmic Gyroscope Orbit Container -->
+        <div class="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[440px] md:h-[440px] lg:w-[490px] lg:h-[490px] flex items-center justify-center">
+
+          <!-- Orbit Line 1: Continuously Rotating Cyan Orbit Ring (360° Continuous Motion) -->
+          <div class="absolute inset-[-14px] sm:inset-[-24px] rounded-full cosmic-orbit-cyan pointer-events-none">
+            <!-- Glowing Orbit Flare Particles rotating along the ring -->
+            <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-300 shadow-[0_0_20px_#00f0ff]"></div>
+            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-white shadow-[0_0_15px_#ffffff]"></div>
+          </div>
+
+          <!-- Orbit Line 2: Continuously Rotating Purple Orbit Ring (Reverse 360° Continuous Motion) -->
+          <div class="absolute inset-[-6px] sm:inset-[-12px] rounded-full cosmic-orbit-purple pointer-events-none">
+            <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-fuchsia-300 shadow-[0_0_18px_#d946ef]"></div>
+          </div>
+
+          <!-- Ambient Radial Glow Halo Behind Photo -->
+          <div class="absolute w-72 h-72 sm:w-88 sm:h-88 lg:w-[400px] lg:h-[400px] rounded-full bg-gradient-to-tr from-cyan-500/35 via-fuchsia-500/25 to-indigo-600/30 blur-3xl pointer-events-none animate-pulse"></div>
+
+          <!-- Big Circular Profile Portrait (Enlarged & Prominent) -->
+          <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[350px] md:h-[350px] lg:w-[390px] lg:h-[390px] rounded-full p-[4px] bg-gradient-to-tr from-cyan-400 via-fuchsia-500 to-indigo-600 shadow-[0_0_50px_rgba(0,240,255,0.7)] z-10 overflow-hidden group">
+            <img src="profile1.png" alt="Azeeza Shaik" class="w-full h-full object-cover object-top rounded-full brightness-105 contrast-105 group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='profile.jpeg';">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-t from-cyan-950/35 via-transparent to-fuchsia-950/15 pointer-events-none"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Center Animated Mouse Scroll Indicator -->
+    <div class="flex flex-col items-center justify-center pt-8 text-center select-none z-20 relative">
+      <a href="#about" class="flex flex-col items-center gap-1 group text-slate-400 hover:text-cyan-300 transition-colors">
+        <div class="w-5 h-8 rounded-full border-2 border-cyan-400/60 flex items-start justify-center p-1 shadow-[0_0_10px_rgba(0,240,255,0.4)] group-hover:border-cyan-300 transition-colors">
+          <div class="w-1 h-2 rounded-full bg-cyan-300 animate-mouse-wheel"></div>
+        </div>
+        <span class="text-[10px] font-mono tracking-wider uppercase mt-1 flex items-center gap-1">
+          Scroll Down <span class="text-cyan-400 text-xs">⌄</span>
+        </span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FULL SCREEN SPREAD ABOUT ME SECTION (Edge-to-Edge Without Restrictive Box Container) -->
+  <section id="about" class="relative w-full min-h-screen py-16 sm:py-24 px-4 sm:px-8 lg:px-14 xl:px-20 overflow-hidden select-none flex flex-col justify-center border-t border-b border-cyan-500/15">
+    
+    <!-- Ambient Atmospheric Volumetric Glows Spanning Across Full Screen -->
+    <div class="absolute -top-32 -left-20 w-[600px] h-[600px] bg-cyan-600/15 rounded-full blur-[140px] pointer-events-none animate-pulse"></div>
+    <div class="absolute top-1/2 -right-32 w-[650px] h-[650px] bg-fuchsia-600/15 rounded-full blur-[140px] pointer-events-none animate-pulse"></div>
+    <div class="absolute -bottom-32 left-1/3 w-[550px] h-[550px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Movable Background Objects (Smooth Slow Continuous Motion - Orbs & Holographic Orbit Rings) -->
+    <!-- 1. Floating Holographic Tech Gyro Orbit Ring (Continuous 360° Slow Rotation) -->
+    <div class="absolute top-10 right-10 sm:right-28 w-56 h-56 cyber-orbit-ring pointer-events-none z-0 animate-spin-slow opacity-60">
+      <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-300 shadow-[0_0_20px_#00f0ff]"></div>
+    </div>
+
+    <!-- 2. Counter-Rotating Purple Hologram Ring -->
+    <div class="absolute bottom-16 left-8 sm:left-24 w-60 h-60 cyber-orbit-ring-purple pointer-events-none z-0 animate-spin-reverse opacity-55">
+      <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-fuchsia-300 shadow-[0_0_20px_#d946ef]"></div>
+    </div>
+
+    <!-- 3. Continuous Slowly Floating Glowing Cyan Cyber Orb -->
+    <div class="absolute top-28 left-6 sm:left-20 pointer-events-none z-0 animate-float-gem-1 opacity-80">
+      <div class="w-10 h-10 sm:w-14 sm:h-14 cyber-floating-orb"></div>
+    </div>
+
+    <!-- 4. Continuous Slowly Floating Glowing Purple Cyber Orb -->
+    <div class="absolute bottom-32 right-8 sm:right-24 pointer-events-none z-0 animate-float-gem-2 opacity-80">
+      <div class="w-12 h-12 sm:w-16 sm:h-16 cyber-floating-orb-purple"></div>
+    </div>
+
+    <!-- 5. Floating Glowing Digital Node Point (Center Top) -->
+    <div class="absolute top-12 left-1/2 -translate-x-1/2 pointer-events-none z-0 animate-float-gem-3 opacity-70">
+      <div class="w-7 h-7 cyber-floating-orb shadow-[0_0_20px_#00f0ff]"></div>
+    </div>
+
+    <!-- 6. Floating Luminous Node (Center Bottom) -->
+    <div class="absolute bottom-20 left-[42%] pointer-events-none z-0 animate-float-gem-4 opacity-70">
+      <div class="w-8 h-8 cyber-floating-orb-purple shadow-[0_0_20px_#d946ef]"></div>
+    </div>
+
+    <!-- Main Inner Content Wrapper Across Full Screen Width -->
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto space-y-12">
+      
+      <!-- Section Header -->
+      <div class="border-b border-cyan-500/20 pb-4">
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">About Me</h2>
+      </div>
+
+      <!-- Main About Narrative & Tall Profile Photo Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- About Narrative & Strengths (lg:col-span-7) -->
+        <div class="lg:col-span-7 bg-slate-900/75 border border-cyan-500/30 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-10 space-y-6 shadow-[0_0_40px_rgba(0,240,255,0.08)] flex flex-col justify-between backdrop-blur-2xl transition-all">
+          <div class="space-y-4">
+            <p class="text-sm sm:text-base leading-relaxed text-slate-200">
+              I am a B.Tech Computer Science and Engineering student at <strong class="text-white font-semibold">St. Mary's Women's Engineering College</strong>, currently pursuing my degree from 2024 to 2028 with an academic CGPA of <span class="text-emerald-400 font-bold">7.86</span>.
+            </p>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-300">
+              I have foundational knowledge of <strong class="text-white">C, Python, Java, HTML, and CSS</strong>. I am deeply interested in frontend development, software engineering, and Artificial Intelligence, reinforced through certified trainings from Internshala, Aajhub (MEAN Stack), and EY & Microsoft.
+            </p>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-300">
+              I have applied my skills on real-world projects such as <a href="https://shaikazeeza7386-dot.github.io/Food-Waste-System-/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 font-semibold underline underline-offset-4 decoration-cyan-500/50 hover:decoration-cyan-400 transition-colors">FoodRescue</a> (Food Waste Management) and <a href="https://shaikazeeza7386-dot.github.io/PROJECTSCHEILD-AI/" target="_blank" rel="noopener noreferrer" class="text-fuchsia-400 hover:text-fuchsia-300 font-semibold underline underline-offset-4 decoration-fuchsia-500/50 hover:decoration-fuchsia-400 transition-colors">ProjectShield AI</a> (Project Risk Intelligence System). Furthermore, my two-month animation internship provided me with hands-on exposure to creative visual workflows, UI presentation, and storyboarding.
+            </p>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-300">
+              My goal is to continuously improve my technical abilities, gain practical industry experience through internships, and build innovative solutions to real-world problems.
+            </p>
+          </div>
+
+          <!-- Core Personal Strengths Badges -->
+          <div class="pt-5 border-t border-cyan-500/20 space-y-3">
+            <div class="text-xs font-semibold text-cyan-300 uppercase tracking-wider">Key Strengths</div>
+            <div class="flex flex-wrap gap-2.5 text-xs">
+              <span class="px-3.5 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium">Workload Resilience</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-medium">Time Management</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-300 font-medium">Team Leadership</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-medium">Good Communication Skills</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-pink-500/10 border border-pink-500/30 text-pink-300 font-medium">Creative Visual Layouts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Photo Card (Directly beside About Me) (lg:col-span-5) - Increased Height, ONLY Name, NO Button -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center">
+          <div class="w-full max-w-[460px] bg-slate-900/75 border border-cyan-500/35 hover:border-cyan-400/60 rounded-3xl p-5 sm:p-6 shadow-[0_0_40px_rgba(0,240,255,0.15)] flex flex-col items-center justify-center transition-all duration-300 group backdrop-blur-2xl">
+            
+            <!-- Photo Frame with Increased Height (image ye only height increased) -->
+            <div class="w-full relative overflow-hidden rounded-2xl border-2 border-cyan-400/50 shadow-[0_0_35px_rgba(0,240,255,0.3)] h-[460px] sm:h-[520px] lg:h-[560px] bg-slate-950">
+              <img 
+                src="profile.jpeg" 
+                alt="Azeeza Shaik" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22400%22 viewBox=%220 0 300 400%22><rect width=%22300%22 height=%22400%22 fill=%22%231e1b4b%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23818cf8%22 font-family=%22sans-serif%22 font-size=%2228%22 font-weight=%22bold%22>Azeeza Shaik</text></svg>';"
+              >
+            </div>
+
+            <!-- Profile Info below photo: ONLY Name (Azeeza Shaik) - Connect With Me removed -->
+            <div class="text-center w-full pt-4">
+              <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Azeeza Shaik</h3>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- MAIN WRAPPER FOR SUBSEQUENT SECTIONS -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-28">
+
+    <!-- TECHNICAL SKILLS SECTION (Styled exactly after Provided Design) -->
+    <section id="skills" class="relative space-y-10 scroll-mt-24 py-4 overflow-hidden">
+      <!-- Atmospheric Ambient Glows -->
+      <div class="absolute -top-20 -left-20 w-80 h-80 bg-cyan-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-fuchsia-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      
+      <!-- Movable Elements -->
+      <div class="absolute top-10 right-8 pointer-events-none z-0 animate-float-gem-2 opacity-50">
+        <div class="w-8 h-8 cyber-floating-orb-purple"></div>
+      </div>
+      <div class="absolute bottom-12 left-6 pointer-events-none z-0 animate-float-gem-1 opacity-50">
+        <div class="w-7 h-7 cyber-floating-orb"></div>
+      </div>
+      
+      <!-- Section Header -->
+      <div class="relative z-10 text-center space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-2xl sm:text-3xl font-bold">
+          <span>&lt;/&gt;</span>
+          <span class="text-white font-extrabold tracking-tight">My Skills</span>
+        </div>
+        <div class="w-16 h-1 mx-auto bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-500 rounded-full"></div>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
+          A comprehensive set of technical skills and tools I work with
+        </p>
+      </div>
+
+      <!-- Skills Cards Grid Layout -->
+      <div class="relative z-10 space-y-6">
+        
+        <!-- Row 1: Programming Languages + Web Development -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          
+          <!-- Card 1: Programming Languages (lg:col-span-5) -->
+          <div class="lg:col-span-5 bg-[#070b1e]/85 border border-purple-500/25 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-7 space-y-5 shadow-[0_0_30px_rgba(168,85,247,0.12)] backdrop-blur-2xl transition-all flex flex-col justify-between">
+            <div class="flex items-center gap-2.5 text-purple-400 font-mono text-sm sm:text-base font-bold">
+              <span class="px-2 py-0.5 rounded-lg bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-mono">&gt;_</span>
+              <span class="text-white tracking-wide">Programming Languages</span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- C Language -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#00599C" d="M116.2 96.6L67.6 124.7a7.9 7.9 0 0 1-7.9 0L11.1 96.6a7.9 7.9 0 0 1-3.9-6.9V33.5c0-2.8 1.5-5.4 3.9-6.9L59.7 1.5a7.9 7.9 0 0 1 7.9 0l48.6 25.1a7.9 7.9 0 0 1 3.9 6.9v56.2c0 2.8-1.5 5.4-3.9 6.9z"/><path fill="#fff" d="M63.7 34.5c-16.3 0-29.5 13.2-29.5 29.5s13.2 29.5 29.5 29.5c10.4 0 19.5-5.4 24.8-13.6l-10.8-6.2c-3.1 5.3-8.8 8.8-14 8.8-10.2 0-18.5-8.3-18.5-18.5s8.3-18.5 18.5-18.5c5.2 0 10.9 3.5 14 8.8l10.8-6.2c-5.3-8.2-14.4-13.6-24.8-13.6z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">C Language</span>
+              </div>
+
+              <!-- Java -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#EA2D2E" d="M48.2 88.5s-7.1 4.1 5 5.6c14.7 1.8 22.3 1.5 38.6-1.5 0 0 4.6 2.9 10.9 5.4-23.7 9.8-63.5 5.2-54.5-9.5zm-3.6-15.6s-8.1 6 3.8 7.3c15.1 1.7 27.6 1.8 49-2.5 0 0 3.3 3.4 7.6 4.7-28.7 8.3-71 5.4-60.4-9.5zm27.4-44.4s11.5 11.7-11 29.6c-17.9 14.3-4 22.4 0 31.4-10.4-10.4-18.4-19.6-13.1-28.1 6.6-10.7 28.2-18 24.1-32.9z"/><path fill="#0074BD" d="M63.8 111.4c17.5-1.1 35.8-6 36.3-6.2 3.8-1.5 7.4-2.8 7.4-2.8-10.2 6.5-27.1 10.6-47.3 11.2-22.3.7-41.2-3.8-41.2-3.8s2.8 1.9 8.1 3.5c10.4 3 24 4.7 36.7 4.7 1.8 0 3.6 0 5.4-.1 24.8-1.1 44.9-7.2 44.9-7.2s-3.7 2.6-12.8 5c-13.4 3.5-35.3 4.8-54.7 3.3-22.9-1.8-38.8-9.4-38.8-9.4 0 0 12.3 7 56.1 1.8z"/><path fill="#EA2D2E" d="M85.7 66.8c5.4 6.3-1.5 12.1-1.5 12.1s14.8-7.7 8-16.6c-7.3-9.5-13.3-14.2-27.1-20.7 0 0 9.8 4.7 20.6 25.2z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Java</span>
+              </div>
+
+              <!-- Python -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#3776AB" d="M63.3 2.1c-30.8 0-28.9 13.4-28.9 13.4l.1 13.9h29.5v4.2H21.5S2 31.4 2 62.4s17.1 30.1 17.1 30.1h10.2v-14.3s-.6-17.1 16.8-17.1h28.8s16.2.3 16.2-15.6V17.7s2.5-15.6-27.8-15.6zm-15.6 9.3c3.1 0 5.6 2.5 5.6 5.6s-2.5 5.6-5.6 5.6-5.6-2.5-5.6-5.6 2.5-5.6 5.6-5.6z"/><path fill="#FFD43B" d="M64.7 125.9c30.8 0 28.9-13.4 28.9-13.4l-.1-13.9H64v-4.2h42.5s19.5 2.2 19.5-28.8-17.1-30.1-17.1-30.1h-10.2v14.3s.6 17.1-16.8 17.1H53.1s-16.2-.3-16.2 15.6v27.8s-2.5 15.6 27.8 15.6zm15.6-9.3c-3.1 0-5.6-2.5-5.6-5.6s2.5-5.6 5.6-5.6 5.6 2.5 5.6 5.6-2.5 5.6-5.6 5.6z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Python</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><rect width="128" height="128" fill="#F7DF1E" rx="16"/><path d="M67.3 100.8c3.2 5.2 7.7 8.7 15.3 8.7 6.4 0 10.5-3.2 10.5-7.6 0-5.3-4.2-7.2-11.3-10.3l-3.9-1.7c-11.2-4.8-18.6-10.8-18.6-23.4 0-11.7 9-20.6 23.1-20.6 10 0 17.2 3.5 22.3 12.3l-10.6 6.8c-2.3-4.1-5.1-6-11.4-6-5.2 0-8.9 3.3-8.9 7.3 0 4.6 3.6 6.5 10.1 9.3l3.9 1.7c13.1 5.6 19.9 11.4 19.9 24.3 0 13.9-10.9 21.6-25.9 21.6-14.5 0-23.7-6.9-28.3-16l13.8-6.1zm-38.6.9c2.3 4.1 4.5 7.5 9.7 7.5 5 0 8.2-2 8.2-9.7V46.8h15.2v52.6c0 15.9-9.3 22.9-23.1 22.9-12.4 0-19.5-6.5-23.3-15.2l13.3-5.4z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Development (lg:col-span-7) - Angular & REST API Removed -->
+          <div class="lg:col-span-7 bg-[#070b1e]/85 border border-purple-500/25 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-7 space-y-5 shadow-[0_0_30px_rgba(168,85,247,0.12)] backdrop-blur-2xl transition-all flex flex-col justify-between">
+            <div class="flex items-center gap-2.5 text-cyan-400 font-mono text-sm sm:text-base font-bold">
+              <span class="text-cyan-400 text-lg">💻</span>
+              <span class="text-white tracking-wide">Web Development</span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- HTML5 -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#E34F26" d="M19.2 114.7L8.3 0h111.4l-10.9 114.6L63.9 128l-44.7-13.3z"/><path fill="#EF652A" d="M64 117.4l36.5-10.8 9.3-95.2H64v106z"/><path fill="#EBEBEB" d="M64 51.5H46.5l-1.2-13.8H64V24.5H30.4l3.6 40.2H64V51.5zm0 37.1l-.1.1-15.5-4.2-1-11.1H33.8l1.9 21.8 28.2 7.8.1-.4v-14z"/><path fill="#fff" d="M63.9 51.5v13.2h16.2l-1.5 17.1-14.7 4v14.1l28.2-7.8.3-3.6 3.3-37h-31.8zm0-27v13.2h34.3l1.2-13.2H63.9z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">HTML5</span>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#1572B6" d="M19.2 114.7L8.3 0h111.4l-10.9 114.6L63.9 128l-44.7-13.3z"/><path fill="#33A9DC" d="M64 117.4l36.5-10.8 9.3-95.2H64v106z"/><path fill="#EBEBEB" d="M64 51.5H46.5l-1.2-13.8H64V24.5H30.4l3.6 40.2H64V51.5zm0 37.1l-.1.1-15.5-4.2-1-11.1H33.8l1.9 21.8 28.2 7.8.1-.4v-14z"/><path fill="#fff" d="M63.9 64.7v13.2l14.7-4 1.1-12.8H63.9zm0-40.2v13.2h32.1l1.1-13.2H63.9zm0 27v13.2h17.4l-.8 8.8-16.6 4.5v13.8l28.2-7.8 2.2-24.5.3-3.9-.4-4.1H63.9z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">CSS3</span>
+              </div>
+
+              <!-- React -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><ellipse cx="64" cy="64" rx="14" ry="38" fill="none" stroke="#61DAFB" stroke-width="4.5" transform="rotate(30 64 64)"/><ellipse cx="64" cy="64" rx="14" ry="38" fill="none" stroke="#61DAFB" stroke-width="4.5" transform="rotate(90 64 64)"/><ellipse cx="64" cy="64" rx="14" ry="38" fill="none" stroke="#61DAFB" stroke-width="4.5" transform="rotate(150 64 64)"/><circle cx="64" cy="64" r="8" fill="#61DAFB"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">React</span>
+              </div>
+
+              <!-- Node.js -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#339933" d="M64 2.8l56.8 32.8v65.6L64 124 7.2 101.2V35.6L64 2.8zm25.8 77.4c0-11-9-13.8-19.6-15.6-7.5-1.3-10.2-2.8-10.2-6.1 0-3.3 2.8-5.3 7.7-5.3 5.3 0 9.7 2.1 13.9 5.8l6.8-8.2c-5.8-5.3-12.7-8.1-20.7-8.1-11.4 0-18.7 6.4-18.7 16.5 0 10.9 9.3 13.7 19.9 15.5 7.4 1.3 9.9 3 9.9 6.2 0 3.7-3.6 5.8-9 5.8-6.6 0-11.9-3-16.7-8.3l-7.3 7.8c6.6 7.6 14.8 11.3 24 11.3 12.3 0 20-6.9 20-17.5z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Node.js</span>
+              </div>
+
+              <!-- Bootstrap -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><rect width="128" height="128" rx="28" fill="#7952B3"/><path fill="#fff" d="M38.8 30h28.7c11.6 0 18.5 5.5 18.5 14.7 0 6.6-4.2 11.6-10.3 13.2v.5c7.8 1.5 12.9 7.1 12.9 14.9 0 11-8.5 17.5-21.9 17.5H38.8V30zm15.1 12.7v15.3h11.9c5.2 0 8.4-2.8 8.4-7.7 0-4.8-3.3-7.6-8.6-7.6H53.9zm0 27.6v17.4h13.2c5.9 0 9.7-2.9 9.7-8.7 0-5.7-3.8-8.7-9.8-8.7H53.9z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Databases + Development Tools & Office + AI & Creative Tools -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+          
+          <!-- Card 3: Databases (md:col-span-12 lg:col-span-3) -->
+          <div class="md:col-span-12 lg:col-span-3 bg-[#070b1e]/85 border border-purple-500/25 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-7 space-y-5 shadow-[0_0_30px_rgba(168,85,247,0.12)] backdrop-blur-2xl transition-all flex flex-col justify-between">
+            <div class="flex items-center gap-2.5 text-purple-400 font-mono text-sm sm:text-base font-bold">
+              <span class="text-purple-400 text-lg">🗄️</span>
+              <span class="text-white tracking-wide">Databases</span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- MySQL -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#00758F" d="M125.7 65.5c-4.4-4-15.3-6.5-23.7-2.1-4.7 2.4-7.6 6.7-10.8 10.3-6.5 7.4-13.6 13.5-22.7 16.5-6.6 2.2-13.8 2.3-20.7 1.5-6.7-.8-13.3-2.6-19.1-6-7.2-4.2-12.7-10.4-17.5-17.1-3.6-5.1-6.7-10.6-9.1-16.4C-.6 46-.8 40.5 1 35.5c1.4-3.8 4.2-7 7.7-9.1 3.2-1.9 7-2.7 10.6-2.5 5 .3 9.7 2.2 13.9 4.9 8.2 5.3 14.9 12.3 21 19.8 4.7 5.8 8.9 12 14.1 17.3 4.2 4.3 9.4 7.6 15.3 9.2 4.4 1.2 9.2 1.3 13.4-.6 4.7-2.1 8-6.1 11.2-10 4.1-5 8.1-10.1 13.5-13.6 5.8-3.8 13.2-4.9 19.7-2.5 1.5.6 3 1.4 4 2.7 1.6 2.1 1.7 4.9 1.1 7.4-.9 3.5-3.2 6.4-5.9 8.6z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">MySQL</span>
+              </div>
+
+              <!-- MongoDB -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[72px] sm:min-w-[80px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#47A248" d="M64.6 2C64.6 2 25 36.6 25 74.3c0 23.3 16.5 44.5 39.6 51.7 23.1-7.2 38.4-28.4 38.4-51.7C103 36.6 64.6 2 64.6 2zm.2 107.5V17.7c15.1 15 25.1 35.8 25.1 56.6 0 17.6-9.7 30.7-25.1 35.2z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Tools & Platforms (md:col-span-12 lg:col-span-5) -->
+          <div class="md:col-span-12 lg:col-span-5 bg-[#070b1e]/85 border border-purple-500/25 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-7 space-y-5 shadow-[0_0_30px_rgba(168,85,247,0.12)] backdrop-blur-2xl transition-all flex flex-col justify-between">
+            <div class="flex items-center gap-2.5 text-cyan-400 font-mono text-sm sm:text-base font-bold">
+              <span class="text-cyan-400 text-lg">🔧</span>
+              <span class="text-white tracking-wide">Tools & Platforms</span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Git -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#F05032" d="M125.7 57.6L70.4 2.3c-3.1-3.1-8.1-3.1-11.2 0L47.7 13.8l14.2 14.2c3.3-1.1 7.2-.3 9.8 2.2 2.6 2.6 3.3 6.4 2.2 9.8l13.7 13.7c3.3-1.1 7.2-.3 9.8 2.2 3.8 3.8 3.8 9.9 0 13.7-3.8 3.8-9.9 3.8-13.7 0-2.8-2.8-3.5-6.9-2.1-10.4L68.7 46.3v34.3c.9.5 1.8 1.2 2.5 1.9 3.8 3.8 3.8 9.9 0 13.7-3.8 3.8-9.9 3.8-13.7 0-3.8-3.8-3.8-9.9 0-13.7.8-.8 1.8-1.5 2.8-2V45.6c-1-.5-2-1.2-2.8-2-2.8-2.8-3.5-7-2-10.4L41.6 19.3 2.3 58.6c-3.1 3.1-3.1 8.1 0 11.2l55.3 55.3c3.1 3.1 8.1 3.1 11.2 0l56.9-56.3c3.1-3.1 3.1-8.1 0-11.2z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Git</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128" fill="#ffffff"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 0C28.7 0 0 28.7 0 64c0 28.3 18.3 52.3 43.8 60.8 3.2.6 4.4-1.4 4.4-3.1v-10.8c-17.8 3.9-21.6-8.6-21.6-8.6-2.9-7.4-7.1-9.4-7.1-9.4-5.8-4 .4-3.9.4-3.9 6.4.5 9.8 6.6 9.8 6.6 5.7 9.8 15 7 18.6 5.3.6-4.1 2.2-7 4-8.6-14.2-1.6-29.2-7.1-29.2-31.6 0-7 2.5-12.7 6.6-17.2-.7-1.6-2.9-8.1.6-17 0 0 5.4-1.7 17.6 6.6 5.1-1.4 10.6-2.1 16.1-2.1 5.4 0 10.9.7 16.1 2.1 12.2-8.3 17.5-6.6 17.5-6.6 3.5 8.9 1.3 15.4.6 17 4.1 4.5 6.6 10.2 6.6 17.2 0 24.6-15 30-29.3 31.6 2.3 2 4.3 5.9 4.3 11.8v17.5c0 1.7 1.2 3.7 4.4 3.1C109.7 116.3 128 92.3 128 64c0-35.3-28.7-64-64-64z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">GitHub</span>
+              </div>
+
+              <!-- VS Code -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><path fill="#0065A9" d="M93.3 126.9c3.2 1.5 7 .9 9.5-1.5l22.5-20.9c2.5-2.3 3.9-5.6 3.9-9V32.5c0-3.4-1.4-6.7-3.9-9L102.8 2.6c-2.5-2.4-6.3-3-9.5-1.5-3.2 1.5-5.2 4.6-5.2 8.1v7.6L44.8 52.3 23.9 36.2c-2.2-1.7-5.2-1.9-7.6-.6L2.6 42.8c-2.8 1.6-4 4.8-3 7.8 1 3 3.8 5 6.9 4.8l26.6-1.5 22.8 17.5-22.8 17.5-26.6-1.5c-3.1-.2-5.9 1.8-6.9 4.8-1 3 .2 6.2 3 7.8l13.7 7.2c2.4 1.3 5.4 1.1 7.6-.6l20.9-16.1 43.3 34.5v7.6c0 3.5 2 6.6 5.2 8.1z"/><path fill="#007ACC" d="M102.8 2.6L44.8 52.3 88.1 86.8V16.7l14.7-14.1z"/><path fill="#1F9CF0" d="M102.8 125.4L44.8 75.7 88.1 41.2v70.1l14.7 14.1z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">VS Code</span>
+              </div>
+
+              <!-- MS Word -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><rect width="128" height="128" rx="24" fill="#185ABD"/><path fill="#ffffff" d="M34 38l14 52h14l11-38 11 38h14l14-52H84l-7 36-11-36H52l-11 36-7-36z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">MS Word</span>
+              </div>
+
+              <!-- MS Excel -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><rect width="128" height="128" rx="24" fill="#107C41"/><path fill="#ffffff" d="M38 38l20 26-20 26h15l13-18 13 18h15l-20-26 20-26H79L66 56 53 38z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">MS Excel</span>
+              </div>
+
+              <!-- MS PowerPoint -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><rect width="128" height="128" rx="24" fill="#D83B01"/><path fill="#ffffff" d="M42 38h28c11 0 18 6 18 16s-7 16-18 16H56v18H42V38zm14 11v11h14c4 0 7-2 7-5.5s-3-5.5-7-5.5H56z"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">PowerPoint</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: AI & Creative Tools (md:col-span-12 lg:col-span-4) - In Place of ML -->
+          <div class="md:col-span-12 lg:col-span-4 bg-[#070b1e]/85 border border-purple-500/25 hover:border-cyan-400/50 rounded-3xl p-6 sm:p-7 space-y-5 shadow-[0_0_30px_rgba(168,85,247,0.12)] backdrop-blur-2xl transition-all flex flex-col justify-between">
+            <div class="flex items-center gap-2.5 text-fuchsia-400 font-mono text-sm sm:text-base font-bold">
+              <span class="text-fuchsia-400 text-lg">✨</span>
+              <span class="text-white tracking-wide">AI & Creative Tools</span>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Canva -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 128 128"><circle cx="64" cy="64" r="60" fill="url(#canva-gradient)"/><defs><linearGradient id="canva-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00C4CC"/><stop offset="60%" stop-color="#7D2AE8"/><stop offset="100%" stop-color="#FF3366"/></linearGradient></defs><text x="64" y="82" text-anchor="middle" font-family="'Brush Script MT', 'Dancing Script', cursive, sans-serif" font-weight="bold" font-size="64" fill="#ffffff">C</text></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Canva</span>
+              </div>
+
+              <!-- ChatGPT -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#10A37F" fill-opacity="0.15"/><path d="M20.5 9.7a4.6 4.6 0 0 0-.4-3.8 4.7 4.7 0 0 0-3.3-2.3 4.7 4.7 0 0 0-4.2.9A4.6 4.6 0 0 0 8.9 3.6a4.7 4.7 0 0 0-3.8 2.8 4.7 4.7 0 0 0-.7 4.3 4.6 4.6 0 0 0 .4 3.8 4.7 4.7 0 0 0 3.3 2.3 4.7 4.7 0 0 0 4.2-.9 4.6 4.6 0 0 0 3.7.9 4.7 4.7 0 0 0 3.8-2.8 4.7 4.7 0 0 0 .7-4.3zm-7.2 8.1c-.7 0-1.3-.2-1.9-.6l.1-.1 3.2-1.8a.9.9 0 0 0 .4-.8v-4.5l1.3.8v3.7a3.1 3.1 0 0 1-3.1 3.3zm-6.6-3.2a3.1 3.1 0 0 1-.4-2c0-.5.1-1.1.4-1.6l.1.1 3.2 1.8a.9.9 0 0 0 .9 0l3.9-2.2v1.5l-3.2 1.8a3.1 3.1 0 0 1-4.9-.4zm-1.1-7.2a3.1 3.1 0 0 1 1.6-1.3c.5-.2 1-.2 1.6-.1l-.1.1-3.2 1.8a.9.9 0 0 0-.4.8v4.5l-1.3-.8V7.8c0-.6.2-1.1.5-1.6zm11.7 2.5l-3.9-2.2v-1.5l3.2-1.8a3.1 3.1 0 0 1 4.4 3c0 .5-.1 1.1-.4 1.6l-.1-.1-3.2-1.8zm2.2 3.6c0 .6-.2 1.1-.5 1.6a3.1 3.1 0 0 1-1.6 1.3c-.5.2-1 .2-1.6.1l.1-.1 3.2-1.8a.9.9 0 0 0 .4-.8v-4.5l1.3.8v3.4zm-7.2-2.3l-1.7-1 1.7-1 1.7 1-1.7 1z" fill="#10A37F"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">ChatGPT</span>
+              </div>
+
+              <!-- Google Gemini -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#1e1b4b" fill-opacity="0.5"/><path d="M12 24C12 17.37 6.63 12 0 12C6.63 12 12 6.63 12 0C12 6.63 17.37 12 24 12C17.37 12 12 17.37 12 24Z" fill="url(#gemini-gradient)"/><defs><linearGradient id="gemini-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4E82EE"/><stop offset="50%" stop-color="#9B72CB"/><stop offset="100%" stop-color="#D96570"/></linearGradient></defs></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Gemini</span>
+              </div>
+
+              <!-- Flow -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#146EF5" fill-opacity="0.2" stroke="#146EF5" stroke-width="1.5"/><path d="M7 16L12 8L17 16H7Z" fill="#146EF5"/><circle cx="12" cy="12" r="3" fill="#00f0ff"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Flow</span>
+              </div>
+
+              <!-- Google Vids -->
+              <div class="flex flex-col items-center justify-center p-3 sm:p-3.5 rounded-xl bg-slate-950/70 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all duration-300 group/tile min-w-[70px] sm:min-w-[76px]">
+                <div class="w-8 h-8 flex items-center justify-center group-hover/tile:scale-110 transition-transform">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="5" fill="#4285F4" fill-opacity="0.2" stroke="#4285F4" stroke-width="1.5"/><path d="M10 8.5L16 12L10 15.5V8.5Z" fill="#4285F4"/><circle cx="18" cy="6" r="2" fill="#34A853"/><circle cx="6" cy="18" r="2" fill="#EA4335"/><circle cx="18" cy="18" r="1.5" fill="#FBBC05"/></svg>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 group-hover/tile:text-white mt-2">Google Vids</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="relative space-y-8 scroll-mt-24 py-4 overflow-hidden">
+      <!-- Atmospheric Ambient Glows -->
+      <div class="absolute -top-24 -right-16 w-88 h-88 bg-emerald-600/10 rounded-full blur-[110px] pointer-events-none"></div>
+      <div class="absolute bottom-1/3 -left-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[110px] pointer-events-none"></div>
+      
+      <!-- Movable Elements -->
+      <div class="absolute top-16 right-10 pointer-events-none z-0 animate-float-gem-3 opacity-55">
+        <div class="w-8 h-8 cyber-floating-orb"></div>
+      </div>
+      <div class="absolute bottom-20 left-10 pointer-events-none z-0 animate-float-gem-4 opacity-55">
+        <div class="w-9 h-9 cyber-floating-orb-purple"></div>
+      </div>
+
+      <div class="relative z-10 border-b border-white/10 pb-4 flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Featured Projects</h2>
+        </div>
+        <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1 transition-colors">
+          <span>GitHub: shaikazeeza7386-dot</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+        <!-- PROJECT 1: FoodRescue - Food Waste Management System -->
+        <article class="bg-slate-900/70 border border-white/10 hover:border-emerald-500/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col shadow-2xl group">
+          <!-- Project Visual: Authentic Login Page Mockup -->
+          <a href="https://shaikazeeza7386-dot.github.io/Food-Waste-System-/" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden w-full h-[300px] flex flex-col group/vis block cursor-pointer border-b border-white/10" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <!-- Simulated Browser Window Header -->
+            <div class="w-full bg-slate-950/80 backdrop-blur-md px-3.5 py-2 border-b border-white/10 flex items-center justify-between z-10 shrink-0">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+              </div>
+              <div class="px-2.5 py-0.5 rounded-full bg-white/10 text-[10px] font-mono text-white/80 flex items-center gap-1 max-w-[210px] truncate">
+                <svg class="w-2.5 h-2.5 text-emerald-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">shaikazeeza7386-dot.github.io/Food-Waste-System-</span>
+              </div>
+              <span class="text-[9px] text-emerald-300 font-bold px-2 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/30">LIVE</span>
+            </div>
+
+            <!-- Login Page Content Preview -->
+            <div class="flex-1 flex items-center justify-center p-3 relative">
+              <!-- Floating Login Card -->
+              <div class="w-full max-w-[260px] bg-white rounded-2xl p-4 shadow-[0_20px_40px_rgba(0,0,0,0.35)] text-slate-800 transition-transform duration-500 group-hover/vis:scale-[1.03]">
+                <div class="text-center mb-2.5">
+                  <div class="text-base font-extrabold text-slate-800 flex items-center justify-center gap-1">
+                    <span>Welcome Back!</span>
+                    <span>👋</span>
+                  </div>
+                  <p class="text-[10px] text-slate-500 mt-0.5">Sign in to connect with NGOs</p>
+                </div>
+                
+                <div class="space-y-1.5 text-left">
+                  <div>
+                    <label class="block text-[9px] font-semibold text-slate-600 mb-0.5">Email</label>
+                    <div class="w-full px-2 py-1 text-[11px] bg-slate-50 border border-slate-200 rounded-md text-slate-700 font-mono flex items-center justify-between">
+                      <span class="truncate">ngo@example.com</span>
+                      <svg class="w-3 h-3 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" /></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-[9px] font-semibold text-slate-600 mb-0.5">Password</label>
+                    <div class="w-full px-2 py-1 text-[11px] bg-slate-50 border border-slate-200 rounded-md text-slate-400 font-mono tracking-widest flex items-center justify-between">
+                      <span>••••••••</span>
+                      <svg class="w-3 h-3 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    </div>
+                  </div>
+                  <div class="w-full py-1.5 rounded-lg text-white font-bold text-[11px] shadow-md text-center flex items-center justify-center gap-1 mt-1 cursor-pointer" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span>Sign In</span>
+                    <span>✨</span>
+                  </div>
+                  <div class="text-[8.5px] text-slate-500 text-center pt-0.5">
+                    Don't have an account? <span class="font-semibold" style="color: #667eea;">Sign up</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hover overlay -->
+            <div class="absolute inset-0 bg-slate-950/65 opacity-0 group-hover/vis:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px] z-20">
+              <span class="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-emerald-500/40 transform translate-y-2 group-hover/vis:translate-y-0 transition-transform">
+                <span>Launch Live Login Site</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project Details -->
+          <div class="p-6 space-y-4 flex flex-col flex-1 justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                <span>Food Waste Management</span>
+                <span>•</span>
+                <span>Community System</span>
+              </div>
+              
+              <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">
+                <a href="https://shaikazeeza7386-dot.github.io/Food-Waste-System-/" target="_blank" rel="noopener noreferrer" class="hover:underline inline-flex items-center gap-1.5">
+                  <span>FoodRescue – Food Waste System</span>
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                A live web application designed to connect food donors, restaurants, and event hosts directly with verified local NGOs to eliminate surplus food waste.
+              </p>
+
+              <!-- Problem / Solution Format -->
+              <div class="grid grid-cols-2 gap-2 pt-1">
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 space-y-0.5">
+                  <span class="text-red-400 font-bold text-[10px] uppercase tracking-wider block">Problem</span>
+                  <p class="text-[11px] text-slate-300 leading-snug">
+                    Severe food waste at venues while nearby shelters face shortages.
+                  </p>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 space-y-0.5">
+                  <span class="text-emerald-400 font-bold text-[10px] uppercase tracking-wider block">Solution</span>
+                  <p class="text-[11px] text-slate-300 leading-snug">
+                    Instant NGO login, live donation dispatch, and verified routing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2.5 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-[11px] font-mono">Live Demo</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-[11px] font-mono">HTML5</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-[11px] font-mono">CSS3</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-[11px] font-mono">JavaScript</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-[11px] font-mono">NGO Portal</span>
+              </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="pt-4 border-t border-white/5 flex flex-wrap items-center gap-3">
+              <a href="https://shaikazeeza7386-dot.github.io/Food-Waste-System-/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-[0_0_20px_rgba(16,185,129,0.35)] transition-all">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                <span>Live Project Demo</span>
+              </a>
+              <a href="https://github.com/shaikazeeza7386-dot/Food-Waste-System-" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-slate-950/70 hover:bg-slate-800 border border-white/10 text-xs font-semibold text-slate-200 hover:text-white flex items-center gap-1.5 transition-all">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: ProjectShield AI – Project Risk Intelligence System -->
+        <article class="bg-slate-900/70 border border-white/10 hover:border-indigo-500/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col shadow-2xl group">
+          <!-- Project Visual: Simulated ProjectShield AI Live App Viewport -->
+          <a href="https://shaikazeeza7386-dot.github.io/PROJECTSCHEILD-AI/" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden w-full h-[300px] flex flex-col group/vis block cursor-pointer border-b border-white/10" style="background: radial-gradient(circle at 50% 30%, #171b30 0%, #070912 100%);">
+            <!-- Simulated Browser Window Header -->
+            <div class="w-full bg-slate-950/80 backdrop-blur-md px-3.5 py-2 border-b border-white/10 flex items-center justify-between z-10 shrink-0">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+              </div>
+              <div class="px-2.5 py-0.5 rounded-full bg-white/10 text-[10px] font-mono text-cyan-300 flex items-center gap-1 max-w-[210px] truncate">
+                <svg class="w-2.5 h-2.5 text-cyan-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">shaikazeeza7386-dot.github.io/PROJECTSCHEILD-AI</span>
+              </div>
+              <span class="text-[9px] text-cyan-300 font-bold px-2 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30">LIVE AI</span>
+            </div>
+
+            <!-- ProjectShield AI UI Preview -->
+            <div class="flex-1 flex flex-col justify-center p-4 relative overflow-hidden">
+              <!-- Glow Orb Effect -->
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+              <div class="w-full max-w-[320px] mx-auto bg-slate-900/90 border border-indigo-500/30 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md transition-transform duration-500 group-hover/vis:scale-[1.03]">
+                <!-- Top Brand Row -->
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white text-[11px] font-black shadow-md shadow-indigo-500/30">
+                      PS
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-white tracking-tight flex items-center gap-1">
+                        ProjectShield AI
+                      </div>
+                      <div class="text-[9px] text-slate-400">Risk Intelligence Engine</div>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 text-[9px] font-bold tracking-wide animate-pulse">
+                    ALERT TRIGGERED
+                  </span>
+                </div>
+
+                <!-- Telemetry Cards Mockup -->
+                <div class="grid grid-cols-3 gap-1.5 mb-2.5">
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Risk Score</span>
+                    <span class="text-sm font-extrabold text-amber-400">87.4%</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Health</span>
+                    <span class="text-sm font-extrabold text-emerald-400">94.2%</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Delay Risk</span>
+                    <span class="text-sm font-extrabold text-rose-400">+2.4 Wks</span>
+                  </div>
+                </div>
+
+                <!-- Flow Strip -->
+                <div class="flex items-center justify-between px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5 text-[9px] font-mono text-slate-300">
+                  <span class="text-indigo-400 font-bold">Detect</span>
+                  <span class="text-slate-600">→</span>
+                  <span class="text-cyan-400 font-bold">Explain</span>
+                  <span class="text-slate-600">→</span>
+                  <span class="text-purple-400 font-bold">Predict</span>
+                  <span class="text-slate-600">→</span>
+                  <span class="text-emerald-400 font-bold">Resolve</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hover overlay -->
+            <div class="absolute inset-0 bg-slate-950/65 opacity-0 group-hover/vis:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px] z-20">
+              <span class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-indigo-500/40 transform translate-y-2 group-hover/vis:translate-y-0 transition-transform">
+                <span>Launch Live AI Dashboard</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project Details -->
+          <div class="p-6 space-y-4 flex flex-col flex-1 justify-between">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold text-cyan-400">
+                <span>Domain:</span>
+                <span class="text-white">Artificial Intelligence</span>
+                <span>•</span>
+                <span class="text-white">Smart Automation</span>
+                <span>•</span>
+                <span class="text-white">Project Management</span>
+              </div>
+              
+              <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                <a href="https://shaikazeeza7386-dot.github.io/PROJECTSCHEILD-AI/" target="_blank" rel="noopener noreferrer" class="hover:underline inline-flex items-center gap-1.5">
+                  <span>ProjectShield AI – Project Risk Intelligence System</span>
+                  <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                An AI-powered project management solution designed to identify potential project risks, predict delays and cost overruns, and provide early warnings with intelligent recommendations.
+              </p>
+
+              <!-- Problem / Solution Format (Exact text) -->
+              <div class="space-y-2 pt-1">
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-red-400 font-bold text-xs uppercase tracking-wider block">Problem</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Projects often face unexpected delays, budget overruns, and milestone failures due to poor risk monitoring and late identification of issues.
+                  </p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-cyan-400 font-bold text-xs uppercase tracking-wider block">Solution</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    AI-powered risk prediction, project health scoring, real-time early warning alerts, milestone monitoring, and smart recommendations to support better project decisions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Key Features List (Exact items) -->
+              <div class="pt-1.5">
+                <span class="text-xs font-bold text-slate-200 block mb-1.5">Key Features</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-slate-300">
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>AI-Based Risk Prediction</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>Early Warning Alerts</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>Project Health Score</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>Delay & Cost Overrun Detection</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>Milestone Monitoring</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0"></span>
+                    <span>Smart Risk Recommendations</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Badges (Exact text) -->
+              <div class="flex flex-wrap items-center gap-1.5 pt-2">
+                <span class="text-xs font-bold text-slate-300 mr-1">Technologies:</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-mono">React.js</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">Python</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">AI/ML</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-mono">Data Analytics</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-mono">Live Demo</span>
+              </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="pt-4 border-t border-white/5 flex flex-wrap items-center gap-3">
+              <a href="https://shaikazeeza7386-dot.github.io/PROJECTSCHEILD-AI/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-[0_0_20px_rgba(109,94,252,0.4)] transition-all">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                <span>Live Project Demo</span>
+              </a>
+              <a href="https://github.com/shaikazeeza7386-dot/PROJECTSCHEILD-AI" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-slate-950/70 hover:bg-slate-800 border border-white/10 text-xs font-semibold text-slate-200 hover:text-white flex items-center gap-1.5 transition-all">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: AI-Powered Project Intelligence Platform -->
+        <article class="bg-slate-900/70 border border-white/10 hover:border-emerald-500/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col shadow-2xl group">
+          <!-- Project Visual: Simulated Bolt.host Live App Viewport -->
+          <a href="https://ai-project-intellige-7lhy.bolt.host/" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden w-full h-[300px] flex flex-col group/vis block cursor-pointer border-b border-white/10" style="background: radial-gradient(circle at 50% 30%, #0d2338 0%, #060e18 100%);">
+            <!-- Simulated Browser Window Header -->
+            <div class="w-full bg-slate-950/80 backdrop-blur-md px-3.5 py-2 border-b border-white/10 flex items-center justify-between z-10 shrink-0">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+              </div>
+              <div class="px-2.5 py-0.5 rounded-full bg-white/10 text-[10px] font-mono text-emerald-300 flex items-center gap-1 max-w-[220px] truncate">
+                <svg class="w-2.5 h-2.5 text-emerald-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">ai-project-intellige-7lhy.bolt.host</span>
+              </div>
+              <span class="text-[9px] text-emerald-300 font-bold px-2 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/30">LIVE BOLT</span>
+            </div>
+
+            <!-- AI Intelligence UI Preview -->
+            <div class="flex-1 flex flex-col justify-center p-4 relative overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+              <div class="w-full max-w-[320px] mx-auto bg-slate-900/90 border border-emerald-500/30 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md transition-transform duration-500 group-hover/vis:scale-[1.03]">
+                <!-- Top Brand Row -->
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded-lg bg-gradient-to-tr from-emerald-500 to-cyan-400 flex items-center justify-center text-slate-950 text-[11px] font-black shadow-md shadow-emerald-500/30">
+                      AI
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-white tracking-tight">
+                        AI Project Intelligence
+                      </div>
+                      <div class="text-[9px] text-slate-400">Risk & Progress Telemetry</div>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[9px] font-bold tracking-wide flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    ACTIVE
+                  </span>
+                </div>
+
+                <!-- Telemetry Cards Mockup -->
+                <div class="grid grid-cols-3 gap-1.5 mb-2.5">
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Health</span>
+                    <span class="text-sm font-extrabold text-emerald-400">96.8%</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Delay Risk</span>
+                    <span class="text-sm font-extrabold text-cyan-400">Low (0.3w)</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-slate-400 uppercase tracking-wider block">Budget</span>
+                    <span class="text-sm font-extrabold text-purple-300">+0.8%</span>
+                  </div>
+                </div>
+
+                <!-- Live Monitoring Banner -->
+                <div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[9.5px] font-mono text-emerald-300">
+                  <span class="flex items-center gap-1.5">
+                    <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Continuous Risk Monitoring</span>
+                  </span>
+                  <span class="text-slate-400">Early Alerts Ready</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hover overlay -->
+            <div class="absolute inset-0 bg-slate-950/65 opacity-0 group-hover/vis:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px] z-20">
+              <span class="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-emerald-500/40 transform translate-y-2 group-hover/vis:translate-y-0 transition-transform">
+                <span>Launch Live Platform</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project Details -->
+          <div class="p-6 space-y-4 flex flex-col flex-1 justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                <span>AI Project Telemetry</span>
+                <span>•</span>
+                <span>Live Cloud Platform</span>
+              </div>
+              
+              <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">
+                <a href="https://ai-project-intellige-7lhy.bolt.host/" target="_blank" rel="noopener noreferrer" class="hover:underline inline-flex items-center gap-1.5">
+                  <span>AI-Powered Project Intelligence Platform</span>
+                  <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                AI-Powered Project Intelligence Platform — A smart AI-driven solution that predicts project risks, monitors progress, identifies potential delays and budget overruns, and provides intelligent recommendations with early warning alerts to improve project success.
+              </p>
+
+              <!-- Problem / Solution Format (Exact text) -->
+              <div class="space-y-2 pt-1">
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-red-400 font-bold text-xs uppercase tracking-wider block">Problem</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Traditional project management systems often fail to identify risks at an early stage, leading to unexpected project delays, budget overruns, missed milestones, and poor decision-making.
+                  </p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-emerald-400 font-bold text-xs uppercase tracking-wider block">Solution</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    An AI-powered project intelligence platform that analyzes project data, predicts potential risks, monitors project health, generates early warning alerts, and provides smart recommendations to prevent delays and improve project success.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2.5 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-mono">Live Demo</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">React.js</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">Vite</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">AI Intelligence</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-mono">Early Warnings</span>
+              </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="pt-4 border-t border-white/5 flex flex-wrap items-center gap-3">
+              <a href="https://ai-project-intellige-7lhy.bolt.host/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-[0_0_20px_rgba(16,185,129,0.35)] transition-all">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                <span>Live Project Demo</span>
+              </a>
+              <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-slate-950/70 hover:bg-slate-800 border border-white/10 text-xs font-semibold text-slate-200 hover:text-white flex items-center gap-1.5 transition-all">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: Lumière Beauté – Luxury Beauty & Wellness Website -->
+        <article class="bg-slate-900/70 border border-white/10 hover:border-rose-400/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col shadow-2xl group">
+          <!-- Project Visual: Simulated Lumière Beauté Viewport -->
+          <a href="https://shaikazeeza7386-dot.github.io/Lumiere-Beauty/" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden w-full h-[300px] flex flex-col group/vis block cursor-pointer border-b border-white/10" style="background: radial-gradient(circle at 50% 30%, #2e1a17 0%, #130a08 100%);">
+            <!-- Simulated Browser Window Header -->
+            <div class="w-full bg-slate-950/80 backdrop-blur-md px-3.5 py-2 border-b border-white/10 flex items-center justify-between z-10 shrink-0">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+              </div>
+              <div class="px-2.5 py-0.5 rounded-full bg-white/10 text-[10px] font-mono text-rose-300 flex items-center gap-1 max-w-[220px] truncate">
+                <svg class="w-2.5 h-2.5 text-rose-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">shaikazeeza7386-dot.github.io/Lumiere-Beauty</span>
+              </div>
+              <span class="text-[9px] text-rose-300 font-bold px-2 py-0.5 rounded bg-rose-500/20 border border-rose-500/30">LIVE</span>
+            </div>
+
+            <!-- Luxury Spa UI Preview -->
+            <div class="flex-1 flex flex-col justify-center p-4 relative overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-rose-500/15 rounded-full blur-3xl pointer-events-none"></div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+              <div class="w-full max-w-[320px] mx-auto bg-stone-900/90 border border-rose-400/30 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md transition-transform duration-500 group-hover/vis:scale-[1.03]">
+                <!-- Top Brand Row -->
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded-lg bg-gradient-to-tr from-rose-400 to-amber-300 flex items-center justify-center text-stone-950 text-[11px] font-black shadow-md shadow-rose-500/30">
+                      LB
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-white tracking-wider uppercase font-serif">
+                        Lumière Beauté
+                      </div>
+                      <div class="text-[9px] text-rose-200/80">Ethereal Radiance & Wellness</div>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-full bg-rose-500/15 border border-rose-400/30 text-rose-300 text-[9px] font-bold tracking-wide">
+                    LUXURY SALON
+                  </span>
+                </div>
+
+                <!-- Service Showcase Grid -->
+                <div class="grid grid-cols-3 gap-1.5 mb-2.5">
+                  <div class="p-2 rounded-xl bg-stone-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-stone-400 uppercase tracking-wider block">Skincare</span>
+                    <span class="text-xs font-bold text-rose-200">Facial Glow</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-stone-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-stone-400 uppercase tracking-wider block">Hair Art</span>
+                    <span class="text-xs font-bold text-amber-200">Styling</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-stone-950/60 border border-white/5 text-center">
+                    <span class="text-[8px] text-stone-400 uppercase tracking-wider block">Rituals</span>
+                    <span class="text-xs font-bold text-rose-300">Wellness Spa</span>
+                  </div>
+                </div>
+
+                <!-- Signature Experiences Banner -->
+                <div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-rose-500/10 border border-rose-400/20 text-[9.5px] font-sans text-rose-200">
+                  <span class="flex items-center gap-1.5">
+                    <svg class="w-3 h-3 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    <span>Signature Treatment Menus</span>
+                  </span>
+                  <span class="text-amber-200 font-semibold">Easy Inquiry</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hover overlay -->
+            <div class="absolute inset-0 bg-slate-950/65 opacity-0 group-hover/vis:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px] z-20">
+              <span class="px-4 py-2 rounded-xl bg-gradient-to-r from-rose-400 via-amber-300 to-rose-300 text-stone-950 font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-rose-500/40 transform translate-y-2 group-hover/vis:translate-y-0 transition-transform">
+                <span>Launch Live Luxury Site</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Project Details -->
+          <div class="p-6 space-y-4 flex flex-col flex-1 justify-between">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-1.5 text-xs font-semibold text-rose-400">
+                <span>Domain:</span>
+                <span class="text-white">Beauty & Wellness</span>
+                <span>•</span>
+                <span class="text-white">Web Development</span>
+              </div>
+              
+              <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-rose-300 transition-colors">
+                <a href="https://shaikazeeza7386-dot.github.io/Lumiere-Beauty/" target="_blank" rel="noopener noreferrer" class="hover:underline inline-flex items-center gap-1.5">
+                  <span>Lumière Beauté – Luxury Beauty & Wellness Website</span>
+                  <svg class="w-4 h-4 text-rose-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                A premium beauty and wellness web application designed to showcase luxury salon services, skincare treatments, hair artistry, and wellness experiences through an elegant and user-friendly interface.
+              </p>
+
+              <!-- Problem / Solution Format (Exact text) -->
+              <div class="space-y-2 pt-1">
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-red-400 font-bold text-xs uppercase tracking-wider block">Problem</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Customers often struggle to discover beauty services, compare treatments, and find essential salon information through traditional platforms.
+                  </p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/5 space-y-1">
+                  <span class="text-rose-400 font-bold text-xs uppercase tracking-wider block">Solution</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    A modern luxury beauty platform featuring organized service menus, signature treatment showcases, customer testimonials, and an easy inquiry form to help customers explore services and connect with the salon.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Key Features List (Exact items) -->
+              <div class="pt-1.5">
+                <span class="text-xs font-bold text-slate-200 block mb-1.5">Key Features</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-slate-300">
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Elegant and responsive user interface</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Beauty and skincare service listings</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Hair styling and wellness treatments</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Signature experiences and visual gallery</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Customer testimonials</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                    <span>Contact and inquiry form</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Badges (Exact text) -->
+              <div class="flex flex-wrap items-center gap-1.5 pt-2">
+                <span class="text-xs font-bold text-slate-300 mr-1">Technologies:</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs font-mono">HTML5</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">CSS3</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-xs font-mono">JavaScript</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-mono">Tailwind CSS</span>
+                <span class="px-2.5 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-mono">Live Demo</span>
+              </div>
+            </div>
+
+            <!-- Action Links -->
+            <div class="pt-4 border-t border-white/5 flex flex-wrap items-center gap-3">
+              <a href="https://shaikazeeza7386-dot.github.io/Lumiere-Beauty/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-rose-500 via-rose-400 to-amber-400 hover:from-rose-400 hover:to-amber-300 text-stone-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-[0_0_20px_rgba(244,63,94,0.35)] transition-all">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                <span>Live Project Demo</span>
+              </a>
+              <a href="https://github.com/shaikazeeza7386-dot/Lumiere-Beauty" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-xl bg-slate-950/70 hover:bg-slate-800 border border-white/10 text-xs font-semibold text-slate-200 hover:text-white flex items-center gap-1.5 transition-all">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="timeline" class="space-y-8 scroll-mt-24">
+      <div class="border-b border-white/10 pb-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Experience & Education</h2>
+      </div>
+
+      <div class="relative border-l-2 border-white/10 ml-4 sm:ml-6 space-y-10 pl-6 sm:pl-8">
+        
+        <!-- Timeline Item 1: B.Tech Degree -->
+        <div class="relative group">
+          <div class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#080c14] group-hover:scale-125 transition-transform"></div>
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 space-y-3 shadow-lg group-hover:border-blue-500/40 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-bold text-base text-white">Bachelor of Technology in Computer Science & Engineering</h3>
+              <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-semibold">2024 – 2028</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300">
+              St. Mary’s Women’s Engineering College • Guntur, India
+            </div>
+            <div class="inline-block px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 font-bold text-xs">
+              Current Academic CGPA: 7.86
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              Second-year undergraduate coursework focused on Computer Science fundamentals, Object-Oriented Programming (Java), C, Python, Data Structures, and Modern Web Applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Animation Internship -->
+        <div class="relative group">
+          <div class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-pink-500 border-4 border-[#080c14] group-hover:scale-125 transition-transform"></div>
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 space-y-3 shadow-lg group-hover:border-pink-500/40 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-bold text-base text-white">Animation Intern</h3>
+              <span class="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-300 text-xs font-semibold">2 Months Duration</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300">
+              Practical Training & Industry Exposure
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-400 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li>Successfully completed a comprehensive two-month practical internship in Animation.</li>
+              <li>Gained practical exposure to core animation concepts and creative workflows.</li>
+              <li>Significantly improved creativity, visual design composition, and presentation skills.</li>
+              <li>Developed an understanding of professional animation production processes from concept to delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: Intermediate -->
+        <div class="relative group">
+          <div class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-[#080c14] group-hover:scale-125 transition-transform"></div>
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 space-y-3 shadow-lg group-hover:border-indigo-500/40 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-bold text-base text-white">Intermediate (Class XI and XII)</h3>
+              <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold">2022 – 2024</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300">
+              Women’s Intermediate College
+            </div>
+            <div class="inline-block px-2.5 py-0.5 rounded-md bg-blue-500/10 text-blue-400 font-bold text-xs">
+              Graduation Score: 81.1%
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              Completed Higher Secondary education with solid academic distinction in Mathematics, Physics, and Chemistry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4: Class X -->
+        <div class="relative group">
+          <div class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-[#080c14] group-hover:scale-125 transition-transform"></div>
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 space-y-3 shadow-lg group-hover:border-purple-500/40 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-bold text-base text-white">Secondary School Certificate (Class X)</h3>
+              <span class="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold">2021 – 2022</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-300">
+              Navabharat Municipal Corporation High School
+            </div>
+            <div class="inline-block px-2.5 py-0.5 rounded-md bg-purple-500/10 text-purple-400 font-bold text-xs">
+              Graduation Score: 73.5%
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              Foundational schooling with active involvement in school science fairs and extracurriculars.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION (With Ambient Glowing Movable Elements) -->
+    <section id="certifications" class="relative space-y-8 scroll-mt-24 py-4 overflow-hidden">
+      
+      <!-- Atmospheric Volumetric Glow Halos -->
+      <div class="absolute -top-24 -left-20 w-80 h-80 bg-cyan-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute top-1/2 -right-24 w-88 h-88 bg-purple-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <!-- Movable Background Objects (Smooth Slow Continuous Motion - Orbs & Holographic Orbit Rings) -->
+      <!-- 1. Floating Holographic Cyber Orbit Ring (Continuous Slow Spin) -->
+      <div class="absolute top-8 right-6 sm:right-16 w-44 h-44 cyber-orbit-ring pointer-events-none z-0 animate-spin-slow opacity-40">
+        <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-cyan-300 shadow-[0_0_15px_#00f0ff]"></div>
+      </div>
+
+      <!-- 2. Counter-Rotating Purple Hologram Ring (Bottom-Left) -->
+      <div class="absolute -bottom-8 left-4 sm:left-12 w-48 h-48 cyber-orbit-ring-purple pointer-events-none z-0 animate-spin-reverse opacity-35">
+        <div class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-fuchsia-300 shadow-[0_0_15px_#d946ef]"></div>
+      </div>
+
+      <!-- 3. Continuously Floating Glowing Cyan Cyber Orb -->
+      <div class="absolute top-20 left-4 sm:left-8 pointer-events-none z-0 animate-float-gem-1 opacity-70">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 cyber-floating-orb"></div>
+      </div>
+
+      <!-- 4. Continuously Floating Glowing Purple Cyber Orb -->
+      <div class="absolute bottom-24 right-4 sm:right-12 pointer-events-none z-0 animate-float-gem-2 opacity-70">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 cyber-floating-orb-purple"></div>
+      </div>
+
+      <!-- 5. Floating Glowing Digital Node Point (Center Top) -->
+      <div class="absolute top-6 left-1/2 -translate-x-1/2 pointer-events-none z-0 animate-float-gem-3 opacity-60">
+        <div class="w-5 h-5 cyber-floating-orb shadow-[0_0_15px_#00f0ff]"></div>
+      </div>
+
+      <!-- Section Header (Cleaned of 05. Credentials & Training) -->
+      <div class="relative z-10 border-b border-white/10 pb-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Certifications & Achievements</h2>
+      </div>
+
+      <!-- Center Glowing Line Indicator (Matches Provided Reference Design) -->
+      <div class="relative z-10 flex justify-center -mt-2 mb-2">
+        <div class="w-14 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full shadow-[0_0_12px_#3b82f6]"></div>
+      </div>
+
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Certificate 1: Hackathon on Front End Development (image1.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-cyan-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Cyan) -->
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/25 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-cyan-300 transition-colors">
+              Hackathon on Front End Development
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              byteXL & St. Mary's Women's Engineering College
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image1.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image1.jpg', 'Hackathon on Front End Development — byteXL');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Certificate 2: Full Stack Web Development Course (image2.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-blue-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Blue) -->
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/25 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-blue-300 transition-colors">
+              Full Stack Web Development Course
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              Aajhub & Sapienz Recruit
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image2.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image2.jpg', 'Full Stack Web Development Course — Aajhub');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Certificate 3: Web Development Training (image3.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-pink-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Pink) -->
+            <div class="w-12 h-12 rounded-2xl bg-pink-500/10 border border-pink-500/25 text-pink-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-pink-300 transition-colors">
+              Web Development Training
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              Internshala Trainings
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image3.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image3.jpg', 'Web Development Training — Internshala');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Certificate 4: AI Mode – Product Understanding (image4.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-amber-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Amber) -->
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-amber-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-amber-300 transition-colors">
+              AI Mode – Product Understanding
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              Google Student Ambassador Program 2026
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image4.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image4.jpg', 'AI Mode – Product Understanding — Google');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Certificate 5: Fund My Crazy: Build Night Edition (image5.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-emerald-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Emerald) -->
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-emerald-300 transition-colors">
+              Fund My Crazy: Build Night Edition
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              Google Student Ambassador Program 2026
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image5.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image5.jpg', 'Fund My Crazy: Build Night Edition — Google (Gemini)');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Certificate 6: Introduction to AI concepts (image6.jpg) -->
+        <div class="bg-[#090d1a] border border-white/10 hover:border-purple-500/50 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div>
+            <!-- Ribbon Badge Icon (Purple) -->
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/25 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="5" stroke-width="2"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 12.5L7 20l5-2.5L17 20l-1.5-7.5"/>
+              </svg>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-purple-300 transition-colors">
+              Introduction to AI Concepts
+            </h3>
+
+            <!-- Issuer Subtitle -->
+            <div class="text-[11px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mt-2.5 mb-6">
+              Microsoft
+            </div>
+          </div>
+
+          <!-- Solid Blue View Certificate Button -->
+          <a href="image6.jpg" target="_blank" rel="noopener noreferrer" onclick="if(window.openCertificateImageModal){event.preventDefault(); openCertificateImageModal('image6.jpg', 'Introduction to AI concepts — Microsoft');}" class="w-full py-3.5 px-4 rounded-2xl bg-[#1d63ff] hover:bg-blue-600 active:scale-[0.98] text-white font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(29,99,255,0.35)] hover:shadow-[0_0_28px_rgba(29,99,255,0.55)] transition-all duration-300 cursor-pointer">
+            <span>VIEW CERTIFICATE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (With Ambient Glowing Movable Elements) -->
+    <section id="contact" class="relative space-y-8 scroll-mt-24 py-4 overflow-hidden">
+      
+      <!-- Atmospheric Volumetric Glows -->
+      <div class="absolute -top-20 -right-16 w-80 h-80 bg-blue-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute -bottom-20 -left-16 w-80 h-80 bg-fuchsia-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <!-- Floating Movable Elements -->
+      <!-- 1. Floating Glowing Cyan Cyber Orb -->
+      <div class="absolute top-12 right-10 pointer-events-none z-0 animate-float-gem-4 opacity-60">
+        <div class="w-8 h-8 cyber-floating-orb"></div>
+      </div>
+
+      <!-- 2. Floating Glowing Purple Cyber Orb -->
+      <div class="absolute bottom-16 left-8 pointer-events-none z-0 animate-float-gem-2 opacity-60">
+        <div class="w-9 h-9 cyber-floating-orb-purple"></div>
+      </div>
+
+      <!-- Section Header (Cleaned of 06. Initiate Communication) -->
+      <div class="relative z-10 border-b border-white/10 pb-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Get in Touch</h2>
+      </div>
+
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Direct Contact Cards -->
+        <div class="lg:col-span-5 space-y-3.5">
+          
+          <!-- Email Card with Copy Trigger -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-4 sm:p-5 flex items-center justify-between group hover:border-blue-500/40 transition-all duration-300 shadow-md">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <div class="text-[11px] text-slate-400 font-medium">Email Address</div>
+                <a href="mailto:shaikazeeza7386@gmail.com" class="text-xs sm:text-sm font-semibold text-white hover:text-blue-400 transition-colors break-all">
+                  shaikazeeza7386@gmail.com
+                </a>
+              </div>
+            </div>
+            <button onclick="copyEmailToClipboard()" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-all shrink-0 ml-2" title="Copy Email" aria-label="Copy Email Address">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-4 sm:p-5 flex items-center gap-3.5 group hover:border-emerald-500/40 transition-all duration-300 shadow-md">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <div class="text-[11px] text-slate-400 font-medium">Direct Phone</div>
+              <a href="tel:+917386944987" class="text-xs sm:text-sm font-semibold text-white hover:text-emerald-400 transition-colors">
+                +91 7386944987
+              </a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-4 sm:p-5 flex items-center gap-3.5 group hover:border-purple-500/40 transition-all duration-300 shadow-md">
+            <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="text-[11px] text-slate-400 font-medium">Location</div>
+              <div class="text-xs sm:text-sm font-semibold text-white">Guntur, Andhra Pradesh, India</div>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-4 sm:p-5 flex items-center justify-between group hover:border-blue-500/40 transition-all duration-300 shadow-md">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-200 shrink-0">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div class="text-[11px] text-slate-400 font-medium">GitHub Repository</div>
+                <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm font-semibold text-blue-400 hover:underline">
+                  shaikazeeza7386-dot
+                </a>
+              </div>
+            </div>
+            <a href="https://github.com/shaikazeeza7386-dot" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-all shrink-0 ml-2" title="Open GitHub">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-4 sm:p-5 flex items-center justify-between group hover:border-blue-500/40 transition-all duration-300 shadow-md">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div>
+                <div class="text-[11px] text-slate-400 font-medium">LinkedIn Profile</div>
+                <a href="https://www.linkedin.com/in/azeeza-shaik-08769b38a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm font-semibold text-blue-400 hover:underline">
+                  Azeeza Shaik
+                </a>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/azeeza-shaik-08769b38a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-all shrink-0 ml-2" title="Open LinkedIn">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7 bg-slate-900/60 border border-white/10 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-md">
+          <form id="contact-form" action="https://formsubmit.co/shaikazeeza7386@gmail.com" method="POST" class="space-y-4">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Message for Azeeza Shaik!">
+            <div>
+              <h3 class="text-base font-bold text-white">Send a Message</h3>
+              <p class="text-xs text-slate-400 mt-0.5">Feel free to reach out regarding internships, projects, or collaborations.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 pt-2">
+              <div>
+                <label for="name" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="e.g., Alex Johnson" class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+              </div>
+              <div>
+                <label for="email" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Email *</label>
+                <input type="email" id="email" name="email" required placeholder="alex@company.com" class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+              </div>
+            </div>
+
+            <div>
+              <label for="subject" class="block text-xs font-semibold text-slate-300 mb-1.5">Subject *</label>
+              <input type="text" id="subject" name="subject" required placeholder="Internship Opportunity / Project Inquiry" class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Message *</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Hi Azeeza, we were impressed by your background and projects..." class="w-full bg-[#080c14] border border-white/10 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs sm:text-sm transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-12 border-t border-white/10 text-center space-y-3">
+      <div class="flex items-center justify-center gap-2">
+        <div class="w-6 h-6 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white text-xs">AS</div>
+        <span class="font-bold text-sm text-slate-200">Azeeza Shaik</span>
+      </div>
+      <p class="text-xs text-slate-400">
+        Computer Science & Engineering • St. Mary's Women's Engineering College, Guntur
+      </p>
+      <p class="text-[11px] text-slate-600 font-mono">
+        © 2026 Azeeza Shaik. Built with Clean HTML5, CSS3, JavaScript & Tailwind.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- Interactive JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
